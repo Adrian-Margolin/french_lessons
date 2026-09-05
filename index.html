@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Français avec Adrian</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav id="nav">
+  <a href="#" id="nl-logo" class="nav-logo syne">Français avec Adrian</a>
+  <ul class="nav-links">
+    <li><a href="#" id="nl-home" data-t="nav_home">Accueil</a></li>
+    <li><a href="#" id="nl-booking" data-t="nav_booking">Réserver</a></li>
+    <li><a href="#" id="nl-bio" data-t="nav_bio">À&nbsp;propos</a></li>
+    <li><a href="#" id="nl-reviews" data-t="nav_reviews">Avis</a></li>
+    <li><a href="#" id="nl-lessons" data-t="nav_lessons">Cours</a></li>
+    <li><a href="#" id="nl-projects" data-t="nav_projects">Projets</a></li>
+    <li><a href="#" id="nl-shop" data-t="nav_shop">Boutique</a></li>
+    </ul>
+  <div class="lang-sw">
+    <button class="lang-btn" id="lb-fr">FR</button>
+    <button class="lang-btn on" id="lb-ua">UA</button>
+    <button class="lang-btn" id="lb-en">EN</button>
+    <button class="lang-btn" id="lb-ru">RU</button>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section id="page-home" class="page active">
+  <div class="hero">
+    <div class="hl">
+      <span class="lbl hlbl" data-t="hero_label">Professeur de FLE · Cours en ligne</span>
+      <h1 class="display htitle"><span data-t="hero_h1_a">Parler</span><br><em data-t="hero_h1_b">français</em><br><span data-t="hero_h1_c">vraiment.</span></h1>
+      <p class="hsub" data-t="hero_sub">Plus de 4 000 cours dispensés.</p>
+      <div class="hacts">
+        <button class="btn bf" id="btn-book-h" data-t="book_btn">Réserver un cours</button>
+        <button class="btn bo" id="btn-bio-h" style="white-space:nowrap;" data-t="bio_btn">À&nbsp;propos</button>
+      </div>
+      <div class="hbdgs">
+        <span class="bdg bi2"><span class="bd"></span><span data-t="badge_active">Réactif</span></span>
+        <span class="bdg bs2"><span class="bd"></span><span data-t="badge_goals">Axé sur les objectifs</span></span>
+        <span class="bdg br2"><span class="bd"></span><span data-t="badge_system">Approche systématique</span></span>
+        <span class="bdg bg2"><span class="bd"></span><span data-t="badge_prof">Professionnel certifié</span></span>
+        <div class="sbdg"><span style="font-size:15px;">⭐</span><div><div style="font-size:12px;font-weight:700;letter-spacing:.04em;font-family:'Syne',sans-serif;" data-t="badge_super">Super-professeur</div><div style="font-size:10px;opacity:.65;letter-spacing:.04em;font-family:'Syne',sans-serif;" data-t="badge_super_sub">Notes élevées · Expérience confirmée</div></div></div>
+      </div>
+    </div>
+    <div class="hr"><img src="images/deco-separator.jpeg" alt="Adrian Margolin"></div>
+  </div>
+  <div class="hsr">
+    <div class="hs"><div class="hsn">4&nbsp;000+</div><div class="hsl" data-t="stat_lessons">cours</div></div>
+    <div class="hs"><div class="hsn">4,9</div><div class="hsl" data-t="stat_rating">note</div></div>
+    <div class="hs hs-lnk" id="btn-stat-r"><div class="hsn">54</div><div class="hsl" data-t="stat_reviews" id="srev-lbl">avis ↗</div></div>
+  </div>
+  <footer><p data-t="footer_copy">© 2026 Adrian Margolin</p><div class="fl"><a href="https://www.linkedin.com/in/adrian-margolin" target="_blank">LinkedIn</a><a href="https://scholar.google.com/citations?user=JBs4-RoAAAAJ&hl=fr" target="_blank">Scholar</a>
+</div></footer>
+</section>
+
+<!-- BOOKING -->
+<section id="page-booking" class="page">
+  <div class="bkh">
+    <div class="rv">
+      <span class="lbl" style="color:rgba(255,255,255,.42);" data-t="bk_lbl">Réserver</span>
+      <h2 class="st" style="color:white;" data-th="bk_h2">Commençons par <em>vous connaître</em>.</h2>
+      <p style="color:rgba(255,255,255,.52);font-size:15px;font-weight:300;line-height:1.8;margin-bottom:20px;" data-t="bk_desc">Avant de réserver, écrivez-moi un message personnel.</p>
+      <div class="bkct">
+        <a href="https://t.me/AdrianFast" target="_blank" class="bkl"><div class="bkic ic-tg">✈</div><div><div class="bklb">Telegram</div><div class="bkv">@AdrianFast</div></div></a>
+        <a href="https://www.linkedin.com/in/adrian-margolin" target="_blank" class="bkl"><div class="bkic ic-li" style="font-weight:700;font-size:12px;color:white;">in</div><div><div class="bklb">LinkedIn</div><div class="bkv">adrian-margolin</div></div></a>
+      </div>
+      <div class="bk-aw">
+        <span class="lbl" style="color:rgba(255,255,255,.32);margin-bottom:8px;" id="bk-al" data-t="popup_active">Élève actif ? Réserver directement :</span>
+        <button class="bk-atg" id="bk-ab" data-t="popup_active_btn">Je suis un élève actif — réserver →</button>
+        
+      </div>
+    </div>
+    <div class="rv" style="transition-delay:.15s;">
+      
+
+
+
+
+<img src="images/photo-1.jpeg" alt="" style="width:100%;max-height:800px;object-fit:cover;border-radius:var(--rl2);opacity:.72;" />
+
+
+
+ 
+    </div>
+  </div>
+  <footer class="dk"><p data-t="footer_copy">© 2026 Adrian Margolin</p><div class="fl"><a href="#" id="fl-bk-h" data-t="nav_home">Accueil</a><a href="#" id="fl-bk-r" data-t="nav_reviews">Avis</a></div></footer>
+</section>
+
+<!-- BIO -->
+<section id="page-bio" class="page">
+  <div class="bioh">
+    <div class="biov">
+
+
+
+
+<img src="images/photo-2.jpeg" alt="" style="width:100%;max-height:800px;object-fit:cover;border-radius:var(--rl2);opacity:.72;" />
+
+
+
+ </div>
+    <div class="biot rv">
+      <div class="bio-name" data-th="bio_name">Adrian <em>Margolin</em></div>
+      <p style="font-size:15px;font-weight:300;line-height:1.8;color:var(--ink2);margin-bottom:14px;" data-t="bio_intro1">Professeur de FLE, traducteur...</p>
+      <p style="font-size:14px;font-weight:300;line-height:1.8;color:var(--ink2);margin-bottom:18px;" data-t="bio_intro2">Mon niveau est celui d'un locuteur quasi-natif...</p>
+      <div class="bio-facts">
+        <div class="bfc"><div class="bfi">🎓</div><div class="bfl" data-t="bio_f_lbl">Formation</div><div class="bfv" data-t="bio_f_val">Double master</div></div>
+        <div class="bfc"><div class="bfi">📖</div><div class="bfl" data-t="bio_a_lbl">Auteur</div><div class="bfv" data-t="bio_a_val">Simplissime A1</div></div>
+        <div class="bfc"><div class="bfi">🔬</div><div class="bfl" data-t="bio_r_lbl">Recherche</div><div class="bfv" data-t="bio_r_val">Doctorat</div></div>
+        <div class="bfc"><div class="bfi">🌍</div><div class="bfl" data-t="bio_l_lbl">Langues</div><div class="lpills"><span class="lp"><strong>FR</strong> C2+</span><span class="lp"><strong>UA</strong> natif</span><span class="lp"><strong>RU</strong> natif</span><span class="lp"><strong>EN</strong> B2</span></div></div>
+      </div>
+      <div style="margin-top:6px;display:flex;gap:10px;flex-wrap:wrap;">
+        <button class="btn bf" id="btn-book-bio" data-t="book_btn">Réserver un cours</button>
+        <a href="https://www.linkedin.com/in/adrian-margolin" target="_blank" class="btn bo">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  <div class="sec" style="background:var(--bg2);display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;">
+    <div class="rvl" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+      <img src="images/photo-3.jpeg" alt="" style="width:100%;height:300px;object-fit:cover;object-position:center top;border-radius:var(--rl2);">
+      <img src="images/photo-4.jpeg" alt="" style="width:100%;height:300px;object-fit:cover;object-position:center;border-radius:var(--rl2);margin-top:24px;">
+    </div>
+    <div class="rvr">
+      <span class="lbl" data-t="bio_passion_lbl">Ce qui me définit</span>
+      <h3 class="st" style="font-size:clamp(20px,2.4vw,32px);">Curieux,<br><em>polyglotte</em>,<br>passionné.</h3>
+      <p style="font-size:13px;font-weight:300;line-height:1.8;color:var(--ink2);max-width:320px;margin-bottom:16px;" data-t="bio_passion_click">Cliquez sur une passion pour en savoir plus.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:9px;">
+        <button class="bdg bi2 psbtn" data-p="photo">📸 Photographie</button>
+        <button class="bdg bs2 psbtn" data-p="piano">🎹 Piano</button>
+        <button class="bdg br2 psbtn" data-p="chess">♟ Échecs</button>
+        <button class="bdg bg2 psbtn" data-p="cinema">🎬 Cinéma</button>
+        <button class="bdg bi2 psbtn" data-p="cycling">🚲 Vélo</button>
+        <button class="bdg bs2 psbtn" data-p="reading">📚 Lecture</button>
+      </div>
+      <div class="psdet" id="psdet"></div>
+    </div>
+  </div>
+  <div class="sec" style="background:var(--ink);padding-top:52px;padding-bottom:52px;">
+    <div class="rv" style="max-width:700px;margin:0 auto;text-align:center;">
+      <span class="lbl" style="color:rgba(255,255,255,.38);" data-t="bio_video_lbl">Aperçu</span>
+      <h3 style="font-family:'Instrument Serif',serif;font-size:clamp(20px,2.8vw,36px);color:white;margin-bottom:26px;" data-th="bio_video_title">Présentation <em>vidéo</em>.</h3>
+      <a href="https://www.youtube.com/watch?v=PUGTGc62Rks" target="_blank" rel="noopener noreferrer" style="display:block;aspect-ratio:16/9;border-radius:var(--rl2);overflow:hidden;background:#000;position:relative;text-decoration:none;">
+        <img src="https://i.ytimg.com/vi/PUGTGc62Rks/hqdefault.jpg" alt="Présentation vidéo" style="width:100%;height:100%;object-fit:cover;display:block;opacity:.86;">
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.36));">
+          <div style="background:rgba(255,255,255,.92);color:#121212;border-radius:999px;padding:10px 16px;font-size:12px;font-weight:700;letter-spacing:.02em;">▶ Regarder sur YouTube</div>
+        </div>
+      </a>
+      <div style="margin-top:12px;font-size:12px;color:rgba(255,255,255,.76);" data-t="bio_video_hint">Regarder la vidéo sur YouTube</div>
+    </div>
+  </div>
+  <footer><p data-t="footer_copy">© 2026 Adrian Margolin</p><div class="fl"><a href="#" id="fl-bio-h" data-t="nav_home">Accueil</a><a href="#" id="fl-bio-l" data-t="nav_lessons">Cours</a><a href="#" id="fl-bio-r" data-t="nav_reviews">Avis</a></div></footer>
+</section>
+
+<!-- REVIEWS -->
+<section id="page-reviews" class="page">
+  <div class="revh rv">
+    <div class="revbig">4,9</div>
+    <div>
+      <span class="lbl" style="color:rgba(255,255,255,.48);" data-t="rev_lbl">Avis élèves</span>
+      <div class="revstars">★★★★★</div>
+      <div style="font-size:13px;opacity:.6;margin-bottom:10px;"><span data-t="rev_meta">54 avis · 4 000+ cours ·</span> <span id="rev-super" data-t="badge_super">Super-professeur</span></div>
+    </div>
+  </div>
+  <div class="revg">
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Apprendre le français était mon rêve depuis plus de 15 ans. Je suis ravie d&#39;avoir rencontré un si bon professeur qu&#39;Adrian. Cela fait déjà un mois et demi que nous travaillons ensemble. Très agréable professeur — les cours sont intéressants, joyeux et clairs. Nous utilisons aussi son manuel, rédigé de façon très professionnelle. Vraiment ravie de continuer ! 😊&quot;, &quot;ua&quot;: &quot;Вивчати французьку була моя мрія більше ніж 15 років. Я дуже рада, що зустріла такого класного вчителя, як Адріан. З Адріаном займаємося вже півтори місяця. Дуже приємний викладач. З Адріаном дуже цікаво, весело та все зрозуміло. Також ми займаємося по його книжці, яка дуже професійно і зрозуміло написана. Дуже рада нашим подальшим заняттям 😊&quot;, &quot;en&quot;: &quot;Learning French was my dream for over 15 years. I&#39;m so glad I found such a great teacher as Adrian. We&#39;ve been studying for a month and a half already. Very pleasant teacher — lessons are fun, interesting and clear. We also use his textbook, which is written very professionally. Very happy to continue! 😊&quot;, &quot;ru&quot;: &quot;Учить французский было моей мечтой уже более 15 лет. Я так рада, что встретила такого замечательного учителя, как Адриан. Занимаемся уже полтора месяца. Очень приятный преподаватель — интересно, весело и всё понятно. Также занимаемся по его книге, написанной очень профессионально. Очень рада нашим дальнейшим занятиям! 😊&quot;, &quot;orig&quot;: &quot;Вивчати французьку була моя мрія більше ніж 15 років. Я дуже рада, що зустріла такого класного вчителя, як Адріан. З Адріаном займаємося вже півтори місяця. Дуже приємний викладач. З Адріаном дуже цікаво, весело та все зрозуміло. Також ми займаємося по його книжці, яка дуже професійно і зрозуміло написана. Дуже рада нашим подальшим заняттям 😊&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-1.jpeg" class="rc-av" alt="Darina" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">D</div>
+    <div><div class="rc-name">Darina</div><div class="rc-date" data-fr="7 avril 2026" data-ua="7 квітня 2026" data-en="April 7, 2026" data-ru="7 апреля 2026">7 квітня 2026</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Вивчати французьку була моя мрія більше ніж 15 років. Я дуже рада, що зустріла такого класного вчителя, як Адріан. З Адріаном займаємося вже півтори місяця. Дуже приємний викладач. З Адріаном дуже цікаво, весело та все зрозуміло. Також ми займаємося по його книжці, яка дуже професійно і зрозуміло написана. Дуже рада нашим подальшим заняттям 😊" data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Après 5 cours, je peux dire que le professeur m&#39;a fait une bonne impression. Atmosphère agréable, structure claire des cours et attention aux détails — exactement ce qu&#39;il faut au début de l&#39;apprentissage. Je recommande.&quot;, &quot;ua&quot;: &quot;Після 5 уроків можу сказати, що викладач справив на мене хороше враження. Приємна атмосфера, чітка структура занять і уважність до деталей — саме те, що потрібно на початку навчання. Рекомендую.&quot;, &quot;en&quot;: &quot;After 5 lessons I can say the teacher made a good impression on me. Pleasant atmosphere, clear lesson structure and attention to detail — exactly what&#39;s needed at the beginning of learning. I recommend.&quot;, &quot;ru&quot;: &quot;После 5 уроков могу сказать, что преподаватель произвёл на меня хорошее впечатление. Приятная атмосфера, чёткая структура занятий и внимание к деталям — именно то, что нужно в начале обучения. Рекомендую.&quot;, &quot;orig&quot;: &quot;Після 5 уроків можу сказати, що викладач справив на мене хороше враження. Приємна атмосфера, чітка структура занять і уважність до деталей — саме те, що потрібно на початку навчання. Рекомендую.&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-2.jpeg" class="rc-av" alt="Evgenia" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">E</div>
+    <div><div class="rc-name">Evgenia</div><div class="rc-date" data-fr="16 mars 2026" data-ua="16 березня 2026" data-en="March 16, 2026" data-ru="16 марта 2026">16 березня 2026</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Після 5 уроків можу сказати, що викладач справив на мене хороше враження. Приємна атмосфера, чітка структура занять і уважність до деталей — саме те, що потрібно на початку навчання. Рекомендую." data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;J&#39;aime beaucoup le rythme — il vous garde concentré sur le sujet. J&#39;apprends énormément !&quot;, &quot;ua&quot;: &quot;Мені дуже подобається темп — він тримає вас у тонусі та зосередженими на предметі. Я дуже багато вчуся!&quot;, &quot;en&quot;: &quot;I really like the pace, it keeps you on your toes and focused on the subject. I learn a lot!&quot;, &quot;ru&quot;: &quot;Мне очень нравится темп — он держит вас в тонусе и сосредоточенными на предмете. Я очень много учусь!&quot;, &quot;orig&quot;: &quot;I really like the pace, it keeps you on your toes and focused on the subject. I learn a lot!&quot;, &quot;orig_lang&quot;: &quot;en&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-3.jpeg" class="rc-av" alt="Evelyn" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">E</div>
+    <div><div class="rc-name">Evelyn</div><div class="rc-date" data-fr="10 mars 2026" data-ua="10 березня 2026" data-en="March 10, 2026" data-ru="10 марта 2026">10 березня 2026</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="I really like the pace, it keeps you on your toes and focused on the subject. I learn a lot!" data-ol="en">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Les cours sont très bien structurés et faciles à suivre. Le professeur explique tout clairement et se concentre entièrement sur l&#39;étudiant. J&#39;apprécie vraiment l&#39;attention individuelle qui rend l&#39;apprentissage plus efficace et confortable. De plus, le professeur fournit souvent des informations supplémentaires utiles.&quot;, &quot;ua&quot;: &quot;Уроки дуже добре структуровані та легкі для сприйняття. Викладач все чітко пояснює і завжди повністю зосереджений на студенті. Ціную індивідуальну увагу під час уроків — це робить навчання більш ефективним і комфортним. Також викладач часто надає додаткову корисну інформацію.&quot;, &quot;en&quot;: &quot;The lessons are very well structured and easy to follow. The teacher explains everything clearly and always focuses fully on the student without getting distracted. I really appreciate the individual attention during the lessons, which makes learning more effective and comfortable. In addition, the teacher often provides extra information and useful explanations that help to better understand the language.&quot;, &quot;ru&quot;: &quot;Уроки очень хорошо структурированы и легко воспринимаются. Преподаватель всё чётко объясняет и всегда полностью сосредоточен на ученике. Ценю индивидуальное внимание во время уроков — это делает обучение более эффективным и комфортным. Также преподаватель часто предоставляет дополнительные полезные объяснения.&quot;, &quot;orig&quot;: &quot;The lessons are very well structured and easy to follow. The teacher explains everything clearly and always focuses fully on the student without getting distracted. I really appreciate the individual attention during the lessons, which makes learning more effective and comfortable. In addition, the teacher often provides extra information and useful explanations that help to better understand the language.&quot;, &quot;orig_lang&quot;: &quot;en&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-4.png" class="rc-av" alt="Iryna" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">I</div>
+    <div><div class="rc-name">Iryna</div><div class="rc-date" data-fr="9 mars 2026" data-ua="9 березня 2026" data-en="March 9, 2026" data-ru="9 марта 2026">9 березня 2026</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="The lessons are very well structured and easy to follow. The teacher explains everything clearly and always focuses fully on the student without getting distracted. I really appreciate the individual attention during the lessons, which makes learning more effective and comfortable. In addition, the teacher often provides extra information and useful explanations that help to better understand the language." data-ol="en">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Je recommande sincèrement Adrian comme professeur professionnel et inspirant. Il sait trouver l&#39;approche pour un adolescent, explique le matériel clairement. Les cours se déroulent dans une atmosphère confortable. L&#39;enfant apprend avec plaisir. Nous voyons de vrais progrès : la prononciation s&#39;est améliorée, le vocabulaire s&#39;est enrichi, la confiance est là, les résultats scolaires aussi.&quot;, &quot;ua&quot;: &quot;Щиро рекомендую Адріана як професійного та надихаючого викладача. Він вміє знайти підхід до підлітка, пояснює матеріал зрозуміло і структуровано. Заняття проходять у комфортній атмосфері, дитина займається із задоволенням. Ми бачимо реальний прогрес: покращилась вимова, розширився словниковий запас, з&#39;явилась впевненість, у школі стало легше.&quot;, &quot;en&quot;: &quot;I sincerely recommend Adrian as a professional and inspiring teacher. He knows how to find the right approach for a teenager and explains material clearly and in a structured way. Lessons take place in a comfortable atmosphere, the child studies with pleasure. We see real progress: pronunciation improved, vocabulary expanded, confidence appeared, school became easier.&quot;, &quot;ru&quot;: &quot;Искренне рекомендую Adrian как профессионального и вдохновляющего преподавателя. Он умеет найти подход к подростку, объясняет материал понятно и структурировано, помогает не просто выучить правила, а действительно понять логику языка. Занятия проходят в комфортной и доброжелательной атмосфере, и самое главное ребенок занимается с удовольствием. Особенно нравится, как он сочетает грамматику с разговорной практикой, много живого общения и интересных заданий. Мы видим реальный прогресс: улучшилось произношение, расширился словарный запас, появилась уверенность, в школе стало легче. Отдельно отмечу системность занятий и сбалансированную нагрузку, без перегруза, но со стабильным результатом.&quot;, &quot;orig&quot;: &quot;Искренне рекомендую Adrian как профессионального и вдохновляющего преподавателя. Он умеет найти подход к подростку, объясняет материал понятно и структурировано, помогает не просто выучить правила, а действительно понять логику языка. Занятия проходят в комфортной и доброжелательной атмосфере, и самое главное ребенок занимается с удовольствием. Особенно нравится, как он сочетает грамматику с разговорной практикой, много живого общения и интересных заданий. Мы видим реальный прогресс: улучшилось произношение, расширился словарный запас, появилась уверенность, в школе стало легче. Отдельно отмечу системность занятий и сбалансированную нагрузку, без перегруза, но со стабильным результатом.&quot;, &quot;orig_lang&quot;: &quot;ru&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-5.jpeg" class="rc-av" alt="Mariya" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">M</div>
+    <div><div class="rc-name">Mariya</div><div class="rc-date" data-fr="25 février 2026" data-ua="25 лютого 2026" data-en="February 25, 2026" data-ru="25 февраля 2026">25 лютого 2026</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Искренне рекомендую Adrian как профессионального и вдохновляющего преподавателя. Он умеет найти подход к подростку, объясняет материал понятно и структурировано, помогает не просто выучить правила, а действительно понять логику языка. Занятия проходят в комфортной и доброжелательной атмосфере, и самое главное ребенок занимается с удовольствием. Особенно нравится, как он сочетает грамматику с разговорной практикой, много живого общения и интересных заданий. Мы видим реальный прогресс: улучшилось произношение, расширился словарный запас, появилась уверенность, в школе стало легче. Отдельно отмечу системность занятий и сбалансированную нагрузку, без перегруза, но со стабильным результатом." data-ol="ru">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Excellent professeur de français. Nous parlons beaucoup pendant les cours, ce qui aide à progresser rapidement et à dépasser la barrière de la langue. Il fait très attention à la prononciation et corrige immédiatement les erreurs. Les explications sont claires et bien structurées. Nous avançons dans le livre beaucoup plus vite qu&#39;avec le professeur précédent 👍🏻&quot;, &quot;ua&quot;: &quot;Чудовий викладач французької. Ми багато говоримо під час занять, що допомагає швидко прогресувати і подолати мовний бар&#39;єр. Він дуже уважний до вимови і відразу виправляє помилки. Пояснення чіткі та добре структуровані. Ми просуваємось по книзі набагато швидше, ніж з попереднім викладачем 👍🏻&quot;, &quot;en&quot;: &quot;Excellent French teacher. We speak a lot during lessons, which helps progress quickly and overcome the language barrier. Very attentive to pronunciation and immediately corrects mistakes. Explanations are clear and well structured. We advance through the book much faster than with the previous teacher 👍🏻&quot;, &quot;ru&quot;: &quot;Отличный преподаватель французского. Мы много говорим на занятиях, что помогает быстро прогрессировать. Он очень внимателен к произношению и сразу исправляет ошибки. Объяснения чёткие и хорошо структурированные. Мы продвигаемся по книге гораздо быстрее, чем с предыдущим преподавателем 👍🏻&quot;, &quot;orig&quot;: &quot;Excellent professeur de français. Nous parlons beaucoup pendant les cours, ce qui aide à progresser rapidement et à dépasser la barrière de la langue. Il fait très attention à la prononciation et corrige immédiatement les erreurs. Les explications sont claires et bien structurées. Nous avançons dans le livre beaucoup plus vite qu&#39;avec le professeur précédent 👍🏻&quot;, &quot;orig_lang&quot;: &quot;fr&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-6.jpeg" class="rc-av" alt="Margaux" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">M</div>
+    <div><div class="rc-name">Margaux</div><div class="rc-date" data-fr="17 février 2026" data-ua="17 лютого 2026" data-en="February 17, 2026" data-ru="17 февраля 2026">17 лютого 2026</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Excellent professeur de français. Nous parlons beaucoup pendant les cours, ce qui aide à progresser rapidement et à dépasser la barrière de la langue. Il fait très attention à la prononciation et corrige immédiatement les erreurs. Les explications sont claires et bien structurées. Nous avançons dans le livre beaucoup plus vite qu&#39;avec le professeur précédent 👍🏻" data-ol="fr">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Je veux laisser un avis sincère 🤗 Adrian a très vite évalué mon niveau et a immédiatement adapté le programme. Les cours sont extrêmement intéressants et dynamiques — le temps passe sans qu&#39;on s&#39;en rende compte. Je souligne notamment son attention à la prononciation, il corrige immédiatement les erreurs. Adrian fournit aussi beaucoup de matériel varié : livres, vidéos, ressources supplémentaires. Je recommande vraiment ! 🤩&quot;, &quot;ua&quot;: &quot;Хочу залишити щирий відгук 🤗 Адріан дуже швидко визначив мій рівень знань і одразу підібрав програму, яка мені підходить. Уроки проходять надзвичайно цікаво та динамічно — час пролітає непомітно. Особливо хочу відзначити його уважність до вимови, він завжди одразу коректує помилки та пояснює, як правильно вимовляти слова. Мені це дуже подобається, адже я бачу реальний прогрес у своїй французькій. Також Адріан дає багато цікавого та різноманітного матеріалу: книги, відео, додаткові ресурси. Завдяки цьому навчання не є монотонним і завжди залишається захопливим 🤩 Щиро рекомендую Адріан всім, хто хоче вивчати французьку ефективно та з задоволенням!&quot;, &quot;en&quot;: &quot;I want to leave a sincere review 🤗 Adrian very quickly assessed my level and immediately adapted the programme. Lessons are extremely interesting and dynamic — time flies by. I especially note his attention to pronunciation, he immediately corrects mistakes. Adrian also provides lots of varied material: books, videos, extra resources. Highly recommended! 🤩&quot;, &quot;ru&quot;: &quot;Хочу оставить искренний отзыв 🤗 Адриан очень быстро определил мой уровень и сразу подобрал программу. Уроки проходят невероятно интересно и динамично — время летит незаметно. Особо отмечаю его внимание к произношению, он всегда сразу корректирует ошибки. Адриан также даёт много интересных материалов: книги, видео, дополнительные ресурсы. Искренне рекомендую! 🤩&quot;, &quot;orig&quot;: &quot;Хочу залишити щирий відгук 🤗 Адріан дуже швидко визначив мій рівень знань і одразу підібрав програму, яка мені підходить. Уроки проходять надзвичайно цікаво та динамічно — час пролітає непомітно. Особливо хочу відзначити його уважність до вимови, він завжди одразу коректує помилки та пояснює, як правильно вимовляти слова. Мені це дуже подобається, адже я бачу реальний прогрес у своїй французькій. Також Адріан дає багато цікавого та різноманітного матеріалу: книги, відео, додаткові ресурси. Завдяки цьому навчання не є монотонним і завжди залишається захопливим 🤩 Щиро рекомендую Адріан всім, хто хоче вивчати французьку ефективно та з задоволенням!&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-7.jpeg" class="rc-av" alt="Nataliia" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">N</div>
+    <div><div class="rc-name">Nataliia</div><div class="rc-date" data-fr="14 février 2026" data-ua="14 лютого 2026" data-en="February 14, 2026" data-ru="14 февраля 2026">14 лютого 2026</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Хочу залишити щирий відгук 🤗 Адріан дуже швидко визначив мій рівень знань і одразу підібрав програму, яка мені підходить. Уроки проходять надзвичайно цікаво та динамічно — час пролітає непомітно. Особливо хочу відзначити його уважність до вимови, він завжди одразу коректує помилки та пояснює, як правильно вимовляти слова. Мені це дуже подобається, адже я бачу реальний прогрес у своїй французькій. Також Адріан дає багато цікавого та різноманітного матеріалу: книги, відео, додаткові ресурси. Завдяки цьому навчання не є монотонним і завжди залишається захопливим 🤩 Щиро рекомендую Адріан всім, хто хоче вивчати французьку ефективно та з задоволенням!" data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;C&#39;est confortable d&#39;étudier avec Adrian, on fait beaucoup en un cours, on analyse toutes les erreurs et questions. J&#39;aime vraiment apprendre le français avec lui, merci !&quot;, &quot;ua&quot;: &quot;З Адріаном комфортно займатись, за урок багато встигаємо, всі помилки та запитання розбираємо, дуже подобається з ним вчити французьку, дякую!&quot;, &quot;en&quot;: &quot;It&#39;s comfortable to study with Adrian, we cover a lot in one lesson, we go through all mistakes and questions. I really enjoy learning French with him, thank you!&quot;, &quot;ru&quot;: &quot;С Адрианом комфортно заниматься, за урок много успеваем, все ошибки и вопросы разбираем, очень нравится учить французский с ним, спасибо!&quot;, &quot;orig&quot;: &quot;З Адріаном комфортно займатись, за урок багато встигаємо, всі помилки та запитання розбираємо, дуже подобається з ним вчити французьку, дякую!&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-4.png" class="rc-av" alt="Angelina" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">A</div>
+    <div><div class="rc-name">Angelina</div><div class="rc-date" data-fr="14 février 2026" data-ua="14 лютого 2026" data-en="February 14, 2026" data-ru="14 февраля 2026">14 лютого 2026</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="З Адріаном комфортно займатись, за урок багато встигаємо, всі помилки та запитання розбираємо, дуже подобається з ним вчити французьку, дякую!" data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;J&#39;ai eu quelques professeurs dans ma vie, mais je peux dire avec confiance qu&#39;Adrian est l&#39;un des meilleurs. Il écoute mes besoins, me motive et apporte un soutien moral. Les cours sont rapides et décontractés, et cette atmosphère rend l&#39;apprentissage du français agréable :)&quot;, &quot;ua&quot;: &quot;Я мала кількох репетиторів, але можу впевнено сказати, що Адріан — один з найкращих. Він слухає мої потреби, мотивує і надає моральну підтримку. Уроки швидкі та розслаблені, і така атмосфера робить вивчення французької приємним :)&quot;, &quot;en&quot;: &quot;I&#39;ve had a few tutors in my life, but I can confidently say that Andre is one of the best. He listens to my academic needs, motivates me, and provides moral support. The lessons are quick and relaxed, and such an environment makes learning French a pleasure :)&quot;, &quot;ru&quot;: &quot;У меня было несколько репетиторов, но могу уверенно сказать, что Адриан — один из лучших. Он слушает мои учебные потребности, мотивирует и оказывает моральную поддержку. Уроки быстрые и непринуждённые, и такая атмосфера делает изучение французского приятным :)&quot;, &quot;orig&quot;: &quot;I&#39;ve had a few tutors in my life, but I can confidently say that Andre is one of the best. He listens to my academic needs, motivates me, and provides moral support. The lessons are quick and relaxed, and such an environment makes learning French a pleasure :)&quot;, &quot;orig_lang&quot;: &quot;en&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-8.jpeg" class="rc-av" alt="Diana" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">D</div>
+    <div><div class="rc-name">Diana</div><div class="rc-date" data-fr="13 février 2026" data-ua="13 лютого 2026" data-en="February 13, 2026" data-ru="13 февраля 2026">13 лютого 2026</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="I&#39;ve had a few tutors in my life, but I can confidently say that Andre is one of the best. He listens to my academic needs, motivates me, and provides moral support. The lessons are quick and relaxed, and such an environment makes learning French a pleasure :)" data-ol="en">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Le meilleur professeur avec qui j&#39;ai jamais travaillé. Explications extrêmement claires, bonne structure de cours et approche vraiment efficace. Il m&#39;a aidée à amener mon français à un tout autre niveau. Les résultats avant et après — c&#39;est simplement le jour et la nuit. Je recommande sincèrement !&quot;, &quot;ua&quot;: &quot;Найкращий викладач, з яким мені коли-небудь доводилося займатися. Надзвичайно чіткі пояснення, хороша структура уроків і справді ефективний підхід. Він допоміг вивести мою французьку на зовсім інший рівень. Результати до початку занять і після — це просто небо і земля. Щиро рекомендую навчання з таким викладачем!&quot;, &quot;en&quot;: &quot;The best teacher I have ever studied with. Extremely clear explanations, good lesson structure and a truly effective approach. He helped bring my French to a completely different level. Results before and after are simply night and day. I sincerely recommend studying with such a teacher!&quot;, &quot;ru&quot;: &quot;Лучший преподаватель, с которым мне когда-либо приходилось заниматься. Невероятно чёткие объяснения, хорошая структура уроков и действительно эффективный подход. Он помог поднять мой французский на совершенно другой уровень. Результаты до и после — это просто небо и земля. Искренне рекомендую!&quot;, &quot;orig&quot;: &quot;Найкращий викладач, з яким мені коли-небудь доводилося займатися. Надзвичайно чіткі пояснення, хороша структура уроків і справді ефективний підхід. Він допоміг вивести мою французьку на зовсім інший рівень. Результати до початку занять і після — це просто небо і земля. Щиро рекомендую навчання з таким викладачем!&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-9.jpeg" class="rc-av" alt="Алена" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">А</div>
+    <div><div class="rc-name">Алена</div><div class="rc-date" data-fr="23 janvier 2026" data-ua="23 січня 2026" data-en="January 23, 2026" data-ru="23 января 2026">23 січня 2026</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Найкращий викладач, з яким мені коли-небудь доводилося займатися. Надзвичайно чіткі пояснення, хороша структура уроків і справді ефективний підхід. Він допоміг вивести мою французьку на зовсім інший рівень. Результати до початку занять і після — це просто небо і земля. Щиро рекомендую навчання з таким викладачем!" data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;L&#39;un des meilleurs professeurs avec qui j&#39;ai travaillé ! Explique de façon très accessible, motive, soutient. Différentes méthodes d&#39;enseignement rendent les cours très intéressants. Accent immédiat sur la prononciation correcte. Communication toujours professionnelle et amicale. Les cours commencent toujours ponctuellement. Je recommande sincèrement !&quot;, &quot;ua&quot;: &quot;Один із найкращих репетиторів з якими я займалась! Надзвичайно доступно пояснює, мотивує, підтримує. Використовує різні методи викладання, що робить заняття дуже цікавими та продуктивними. Також одразу акцентує увагу на правильній вимові. Комунікація завжди дуже професійна, ввічлива і дружелюбна. Уроки починаються завжди пунктуально. Щиро рекомендую!&quot;, &quot;en&quot;: &quot;One of the best tutors I&#39;ve ever studied with! Explains very accessibly, motivates, supports. Different teaching methods make lessons very interesting. Immediately focuses on correct pronunciation. Communication always very professional and friendly. Lessons always start punctually. I sincerely recommend!&quot;, &quot;ru&quot;: &quot;Один из лучших репетиторов, с которыми я занималась! Невероятно доступно объясняет, мотивирует, поддерживает. Разные методы преподавания делают занятия очень интересными. Сразу акцентирует внимание на правильном произношении. Общение всегда очень профессиональное и дружелюбное. Уроки всегда начинаются пунктуально. Искренне рекомендую!&quot;, &quot;orig&quot;: &quot;Один із найкращих репетиторів з якими я займалась! Надзвичайно доступно пояснює, мотивує, підтримує. Використовує різні методи викладання, що робить заняття дуже цікавими та продуктивними. Також одразу акцентує увагу на правильній вимові. Комунікація завжди дуже професійна, ввічлива і дружелюбна. Уроки починаються завжди пунктуально. Щиро рекомендую!&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-10.jpeg" class="rc-av" alt="Tetiana" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">T</div>
+    <div><div class="rc-name">Tetiana</div><div class="rc-date" data-fr="8 janvier 2026" data-ua="8 січня 2026" data-en="January 8, 2026" data-ru="8 января 2026">8 січня 2026</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Один із найкращих репетиторів з якими я займалась! Надзвичайно доступно пояснює, мотивує, підтримує. Використовує різні методи викладання, що робить заняття дуже цікавими та продуктивними. Також одразу акцентує увагу на правильній вимові. Комунікація завжди дуже професійна, ввічлива і дружелюбна. Уроки починаються завжди пунктуально. Щиро рекомендую!" data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Je prends des cours avec Adrian depuis 2 mois et je suis très heureuse de l&#39;avoir choisi ! J&#39;apprends le français de zéro avec son propre manuel. Les cours sont toujours vivants, intéressants et positifs. Pendant mes études, j&#39;ai été deux fois en France et j&#39;ai même pu parler un peu français. Je recommande sincèrement à tous ! 🤗&quot;, &quot;ua&quot;: &quot;Займаюсь з Адріаном вже 2 місяці й дуже рада, що обрала саме його! Вивчаю французьку з нуля за власним сучасним підручником Адріана. Уроки завжди проходять жваво, цікаво та позитивно. Кожне заняття ми встигаємо розглянути багато тем, вивчити нові слова та вирази, закріпити те, що вивчали раніше. Адріан завжди доступно та зрозуміло все пояснює, мені дуже подобається процес навчання. Кожен урок чекаю з нетерпінням, а виходжу з заняття завжди в чудовому настрої! За час навчання я двічі була у Франції і навіть могла трохи говорити французькою (small talk, замовити щось в закладі чи в магазині тощо), що мені здається просто чудово, як для такого короткого проміжку часу! Всім щиро рекомендую заняття з Адріаном 🤗&quot;, &quot;en&quot;: &quot;I&#39;ve been studying with Adrian for 2 months and I&#39;m very happy I chose him! Learning French from scratch with his own modern textbook. Lessons are always lively, interesting and positive. During my studies I was in France twice and was even able to speak a little French. I sincerely recommend to everyone! 🤗&quot;, &quot;ru&quot;: &quot;Занимаюсь с Адрианом уже 2 месяца и очень рада, что выбрала именно его! Учу французский с нуля по его собственному современному учебнику. Уроки всегда живые, интересные и позитивные. За время учёбы я дважды была во Франции и даже могла немного говорить по-французски. Искренне рекомендую всем! 🤗&quot;, &quot;orig&quot;: &quot;Займаюсь з Адріаном вже 2 місяці й дуже рада, що обрала саме його! Вивчаю французьку з нуля за власним сучасним підручником Адріана. Уроки завжди проходять жваво, цікаво та позитивно. Кожне заняття ми встигаємо розглянути багато тем, вивчити нові слова та вирази, закріпити те, що вивчали раніше. Адріан завжди доступно та зрозуміло все пояснює, мені дуже подобається процес навчання. Кожен урок чекаю з нетерпінням, а виходжу з заняття завжди в чудовому настрої! За час навчання я двічі була у Франції і навіть могла трохи говорити французькою (small talk, замовити щось в закладі чи в магазині тощо), що мені здається просто чудово, як для такого короткого проміжку часу! Всім щиро рекомендую заняття з Адріаном 🤗&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-11.jpeg" class="rc-av" alt="Karyna" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">K</div>
+    <div><div class="rc-name">Karyna</div><div class="rc-date" data-fr="9 mars 2025" data-ua="9 березня 2025" data-en="March 9, 2025" data-ru="9 марта 2025">9 березня 2025</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Займаюсь з Адріаном вже 2 місяці й дуже рада, що обрала саме його! Вивчаю французьку з нуля за власним сучасним підручником Адріана. Уроки завжди проходять жваво, цікаво та позитивно. Кожне заняття ми встигаємо розглянути багато тем, вивчити нові слова та вирази, закріпити те, що вивчали раніше. Адріан завжди доступно та зрозуміло все пояснює, мені дуже подобається процес навчання. Кожен урок чекаю з нетерпінням, а виходжу з заняття завжди в чудовому настрої! За час навчання я двічі була у Франції і навіть могла трохи говорити французькою (small talk, замовити щось в закладі чи в магазині тощо), що мені здається просто чудово, як для такого короткого проміжку часу! Всім щиро рекомендую заняття з Адріаном 🤗" data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Merci pour les explications, l&#39;enthousiasme et l&#39;approche personnelle.&quot;, &quot;ua&quot;: &quot;Дякую за пояснення, ентузіазм та особистий підхід.&quot;, &quot;en&quot;: &quot;Thank you for the explanations, enthusiasm and personal approach.&quot;, &quot;ru&quot;: &quot;Спасибо за объяснения, энтузиазм и индивидуальный подход.&quot;, &quot;orig&quot;: &quot;Дякую за пояснення, ентузіазм та особистий підхід.&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-12.jpeg" class="rc-av" alt="Вадим" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">В</div>
+    <div><div class="rc-name">Вадим</div><div class="rc-date" data-fr="31 octobre 2025" data-ua="31 жовтня 2025" data-en="October 31, 2025" data-ru="31 октября 2025">31 жовтня 2025</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Дякую за пояснення, ентузіазм та особистий підхід." data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Superb! Magnifique !&quot;, &quot;ua&quot;: &quot;Superb! Magnifique!&quot;, &quot;en&quot;: &quot;Superb! Magnifique!&quot;, &quot;ru&quot;: &quot;Superb! Magnifique!&quot;, &quot;orig&quot;: &quot;Superb! Magniffique!&quot;, &quot;orig_lang&quot;: &quot;en&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-13.jpeg" class="rc-av" alt="Al" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">A</div>
+    <div><div class="rc-name">Al</div><div class="rc-date" data-fr="25 octobre 2025" data-ua="25 жовтня 2025" data-en="October 25, 2025" data-ru="25 октября 2025">25 жовтня 2025</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Superb! Magniffique!" data-ol="en">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Excellent professeur, très attentif aux détails !&quot;, &quot;ua&quot;: &quot;Чудовий викладач, дуже уважний до деталей!&quot;, &quot;en&quot;: &quot;Wonderful teacher, very attentive to details!&quot;, &quot;ru&quot;: &quot;Замечательный преподаватель, очень внимателен к деталям!&quot;, &quot;orig&quot;: &quot;Замечательный преподаватель, очень внимателен к деталям!&quot;, &quot;orig_lang&quot;: &quot;ru&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-14.jpeg" class="rc-av" alt="Danylo" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">D</div>
+    <div><div class="rc-name">Danylo</div><div class="rc-date" data-fr="2 septembre 2025" data-ua="2 вересня 2025" data-en="September 2, 2025" data-ru="2 сентября 2025">2 вересня 2025</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Замечательный преподаватель, очень внимателен к деталям!" data-ol="ru">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;J&#39;aime apprendre le français avec Adrian :)&quot;, &quot;ua&quot;: &quot;Мені подобається вчити французьку з Адріаном :)&quot;, &quot;en&quot;: &quot;I love learning French with Adrian :)&quot;, &quot;ru&quot;: &quot;Мне нравится учить французский с Адрианом :)&quot;, &quot;orig&quot;: &quot;J&#39;aime apprendre le français avec Adrian:)&quot;, &quot;orig_lang&quot;: &quot;fr&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-15.jpeg" class="rc-av" alt="Anhelina" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">A</div>
+    <div><div class="rc-name">Anhelina</div><div class="rc-date" data-fr="8 juillet 2025" data-ua="8 липня 2025" data-en="July 8, 2025" data-ru="8 июля 2025">8 липня 2025</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="J&#39;aime apprendre le français avec Adrian:)" data-ol="fr">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;D&#39;un seul souffle.&quot;, &quot;ua&quot;: &quot;На одному подиху&quot;, &quot;en&quot;: &quot;All in one breath.&quot;, &quot;ru&quot;: &quot;На одном дыхании.&quot;, &quot;orig&quot;: &quot;На одному подиху&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-16.jpeg" class="rc-av" alt="Oleksii" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">O</div>
+    <div><div class="rc-name">Oleksii</div><div class="rc-date" data-fr="23 juin 2025" data-ua="23 червня 2025" data-en="June 23, 2025" data-ru="23 июня 2025">23 червня 2025</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="На одному подиху" data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;J&#39;ai commencé à apprendre le français de zéro avec Adrian — certainement le bon choix de professeur. Il explique tout clairement et crée une atmosphère confortable et amicale. Je vois déjà de grands progrès. Nos cours sont pleins de faits intéressants sur la langue. C&#39;est toujours un plaisir d&#39;apprendre avec quelqu&#39;un qui aime vraiment ce qu&#39;il fait !&quot;, &quot;ua&quot;: &quot;Я почала вивчати французьку з нуля з Адріаном — безперечно правильний вибір викладача. Він пояснює все чітко і створює комфортну, дружню атмосферу. Я вже бачу великий прогрес. Наші уроки наповнені цікавими фактами про мову. Завжди задоволення вчитися з кимось, хто по-справжньому любить свою справу!&quot;, &quot;en&quot;: &quot;I have started learning French from scratch with Adrian, who is certainly the right choice of teacher. He explains everything clearly and creates a comfortable, friendly atmosphere. I&#39;m already seeing great progress, which is very motivating and encourages me to keep going. Our lessons are full of interesting facts about the language, which makes them even more engaging. It&#39;s always a pleasure to learn with someone who truly loves what they do!&quot;, &quot;ru&quot;: &quot;Я начала учить французский с нуля с Адрианом — это определённо правильный выбор преподавателя. Он объясняет всё чётко и создаёт комфортную, дружелюбную атмосферу. Я уже вижу большой прогресс. Наши уроки наполнены интересными фактами о языке. Всегда приятно учиться у того, кто по-настоящему любит своё дело!&quot;, &quot;orig&quot;: &quot;I have started learning French from scratch with Adrian, who is certainly the right choice of teacher. He explains everything clearly and creates a comfortable, friendly atmosphere. I&#39;m already seeing great progress, which is very motivating and encourages me to keep going. Our lessons are full of interesting facts about the language, which makes them even more engaging. It&#39;s always a pleasure to learn with someone who truly loves what they do!&quot;, &quot;orig_lang&quot;: &quot;en&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-17.jpeg" class="rc-av" alt="Olga" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">O</div>
+    <div><div class="rc-name">Olga</div><div class="rc-date" data-fr="2 mai 2025" data-ua="2 травня 2025" data-en="May 2, 2025" data-ru="2 мая 2025">2 травня 2025</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="I have started learning French from scratch with Adrian, who is certainly the right choice of teacher. He explains everything clearly and creates a comfortable, friendly atmosphere. I&#39;m already seeing great progress, which is very motivating and encourages me to keep going. Our lessons are full of interesting facts about the language, which makes them even more engaging. It&#39;s always a pleasure to learn with someone who truly loves what they do!" data-ol="en">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;J&#39;apprends le français avec mon professeur, et j&#39;aime beaucoup nos cours. Je me sens en confiance et très à l&#39;aise. Je vois de vrais progrès dans mon niveau. Les explications sont toujours très claires et faciles à comprendre. C&#39;est un vrai plaisir d&#39;apprendre le français avec Adrian !&quot;, &quot;ua&quot;: &quot;Я вивчаю французьку зі своїм викладачем, і мені дуже подобаються наші уроки. Я почуваюся впевнено і дуже невимушено. Я бачу реальний прогрес. Пояснення завжди дуже чіткі та зрозумілі. Вивчати французьку з Адріаном — справжнє задоволення!&quot;, &quot;en&quot;: &quot;I&#39;m learning French with my teacher, and I really enjoy our lessons. I feel confident and very much at ease. I see real progress in my level. The explanations are always very clear and easy to understand. It&#39;s a real pleasure to learn French with Adrian!&quot;, &quot;ru&quot;: &quot;Я учу французский со своим преподавателем, и мне очень нравятся наши уроки. Я чувствую себя уверенно и очень непринуждённо. Я вижу реальный прогресс. Объяснения всегда очень чёткие и понятные. Учить французский с Адрианом — настоящее удовольствие!&quot;, &quot;orig&quot;: &quot;J&#39;apprends le français avec mon professeur, et j&#39;aime beaucoup nos cours. Je me sens en confiance at très a l&#39;aise. Je vois de vrais progrès dans mon niveau. Ce que j&#39;apprécie particulièrement, c&#39;est que je peux poser toutes mes questions a mon professeur. Les explications sont toujours très claires et faciles a comprendre. C&#39;est un vrai plaisir d&#39;apprendre le français avec mon professeur Adrian!&quot;, &quot;orig_lang&quot;: &quot;fr&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-18.jpeg" class="rc-av" alt="Angelina" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">A</div>
+    <div><div class="rc-name">Angelina</div><div class="rc-date" data-fr="28 avril 2025" data-ua="28 квітня 2025" data-en="April 28, 2025" data-ru="28 апреля 2025">28 квітня 2025</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="J&#39;apprends le français avec mon professeur, et j&#39;aime beaucoup nos cours. Je me sens en confiance at très a l&#39;aise. Je vois de vrais progrès dans mon niveau. Ce que j&#39;apprécie particulièrement, c&#39;est que je peux poser toutes mes questions a mon professeur. Les explications sont toujours très claires et faciles a comprendre. C&#39;est un vrai plaisir d&#39;apprendre le français avec mon professeur Adrian!" data-ol="fr">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Adrian est un super professeur qui rend toujours les cours amusants, clairs et enrichissants ! Il répond à toutes les questions et explique soigneusement les nuances difficiles de la langue. Je recommande vivement Adrian à ceux qui cherchent un bon professeur !&quot;, &quot;ua&quot;: &quot;Адріан — чудовий репетитор, який завжди робить уроки цікавими, чіткими та насиченими! Він відповідає на всі запитання і ретельно пояснює складні нюанси мови. Дуже рекомендую Адріана всім, хто шукає гарного викладача!&quot;, &quot;en&quot;: &quot;Adrian is an awesome tutor who always makes the lessons fun, clear, and insightful! He provides answers to all questions and carefully explains the difficult nuances of the language. I highly recommend Adrian to those who are looking for a nice teacher!&quot;, &quot;ru&quot;: &quot;Адриан — замечательный репетитор, который всегда делает уроки интересными, чёткими и насыщенными! Он отвечает на все вопросы и тщательно объясняет сложные нюансы языка. Очень рекомендую Адриана всем, кто ищет хорошего преподавателя!&quot;, &quot;orig&quot;: &quot;Adrian is an awesome tutor who always makes the lessons fun, clear, and insightful! He provides answers to all questions and carefully explains the difficult nuances of the language. I highly recommend Adrian to those who are looking for a nice teacher!&quot;, &quot;orig_lang&quot;: &quot;en&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-19.jpeg" class="rc-av" alt="Anton" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">A</div>
+    <div><div class="rc-name">Anton</div><div class="rc-date" data-fr="29 mars 2025" data-ua="29 березня 2025" data-en="March 29, 2025" data-ru="29 марта 2025">29 березня 2025</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Adrian is an awesome tutor who always makes the lessons fun, clear, and insightful! He provides answers to all questions and carefully explains the difficult nuances of the language. I highly recommend Adrian to those who are looking for a nice teacher!" data-ol="en">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Très bien, très positif, attentif aux détails&quot;, &quot;ua&quot;: &quot;Дуже добре, дуже позитивний, уважний до деталей&quot;, &quot;en&quot;: &quot;Very good, very positive, attentive to details&quot;, &quot;ru&quot;: &quot;Очень хорошо, очень позитивный, внимателен к деталям&quot;, &quot;orig&quot;: &quot;Très bien, très positif, attentif aux détails&quot;, &quot;orig_lang&quot;: &quot;fr&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-4.png" class="rc-av" alt="Vitalii" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">V</div>
+    <div><div class="rc-name">Vitalii</div><div class="rc-date" data-fr="28 mars 2025" data-ua="28 березня 2025" data-en="March 28, 2025" data-ru="28 марта 2025">28 березня 2025</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Très bien, très positif, attentif aux détails" data-ol="fr">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;J&#39;adore apprendre le français, Adrian est le meilleur professeur de tous ceux que j&#39;ai eus jusqu&#39;ici.&quot;, &quot;ua&quot;: &quot;дуже подобається займатися французькою, Адріан найкращий репетитор з усіх, хто був до цього.&quot;, &quot;en&quot;: &quot;I really enjoy learning French, Adrian is the best tutor of all those I&#39;ve had before.&quot;, &quot;ru&quot;: &quot;Очень нравится заниматься французским, Адриан — лучший репетитор из всех, что были до этого.&quot;, &quot;orig&quot;: &quot;дуже подобається займатися французькою, Адріан найкращий репетитор з усіх, хто був до цього.&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-4.png" class="rc-av" alt="Matvii" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">M</div>
+    <div><div class="rc-name">Matvii</div><div class="rc-date" data-fr="20 février 2025" data-ua="20 лютого 2025" data-en="February 20, 2025" data-ru="20 февраля 2025">20 лютого 2025</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="дуже подобається займатися французькою, Адріан найкращий репетитор з усіх, хто був до цього." data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Les cours se déroulent de façon intéressante et dynamique, dans une atmosphère de confiance et de confort. Sait expliquer clairement les points difficiles, met l&#39;accent sur la pratique orale. Je recommande à tous ceux qui veulent apprendre le français avec plaisir et résultats !&quot;, &quot;ua&quot;: &quot;Заняття проходять цікаво і динамічно, в атмосфері довіри і комфорту. Вміє доступно пояснити складні моменти, робить акцент на розмовній практиці, що допомагає швидко розвинути навички спілкування. Рекомендую всім, хто хоче вивчати французьку із задоволенням і результатом!&quot;, &quot;en&quot;: &quot;Lessons are interesting and dynamic, in an atmosphere of trust and comfort. Knows how to explain difficult points clearly, focuses on conversational practice, which helps quickly develop communication skills. I recommend to everyone who wants to learn French with pleasure and results!&quot;, &quot;ru&quot;: &quot;Занятия проходят интересно и динамично, в атмосфере доверия и комфорта. Умеет доступно объяснить сложные моменты, делает акцент на разговорной практике, что помогает быстро развить навыки общения. Рекомендую всем, кто хочет изучать французский с удовольствием и результатом!&quot;, &quot;orig&quot;: &quot;Занятия проходят интересно и динамично, в атмосфере доверия и комфорта. Умеет доступно объяснить сложные моменты, делает акцент на разговорной практике, что помогает быстро развить навыки общения. Рекомендую всем, кто хочет изучать французский с удовольствием и результатом!&quot;, &quot;orig_lang&quot;: &quot;ru&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-4.png" class="rc-av" alt="Artur" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">A</div>
+    <div><div class="rc-name">Artur</div><div class="rc-date" data-fr="11 février 2025" data-ua="11 лютого 2025" data-en="February 11, 2025" data-ru="11 февраля 2025">11 лютого 2025</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Занятия проходят интересно и динамично, в атмосфере доверия и комфорта. Умеет доступно объяснить сложные моменты, делает акцент на разговорной практике, что помогает быстро развить навыки общения. Рекомендую всем, кто хочет изучать французский с удовольствием и результатом!" data-ol="ru">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Adrian est un professeur très attentif aux détails et compétent. Peut adapter les leçons à différents sujets. J&#39;adore apprendre le français avec Adrian ! Je peux voir clairement mes progrès :)&quot;, &quot;ua&quot;: &quot;Адріан — дуже уважний до деталей і компетентний викладач. Може адаптувати уроки до різних тем. Я обожнюю вчити французьку з Адріаном! Я чітко бачу свій прогрес :)&quot;, &quot;en&quot;: &quot;Adrian is a very attentive and competent teacher. He can adapt lessons to different topics. I love learning French with Adrian! I can clearly see my progress :)&quot;, &quot;ru&quot;: &quot;Адриан — очень внимательный к деталям и компетентный преподаватель. Умеет адаптировать уроки к разным темам. Я обожаю учить французский с Адрианом! Я отчётливо вижу свой прогресс :)&quot;, &quot;orig&quot;: &quot;Adrian est un professeur très attentif aux détails et compétent. Peut adapter les leçons à différents sujets. J&#39;adore apprendre le français avec Adrian ! Je peux voir clairement mes progrès :)&quot;, &quot;orig_lang&quot;: &quot;fr&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-20.jpeg" class="rc-av" alt="Anastasiia" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">A</div>
+    <div><div class="rc-name">Anastasiia</div><div class="rc-date" data-fr="29 janvier 2025" data-ua="29 січня 2025" data-en="January 29, 2025" data-ru="29 января 2025">29 січня 2025</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Adrian est un professeur très attentif aux détails et compétent. Peut adapter les leçons à différents sujets. J&#39;adore apprendre le français avec Adrian ! Je peux voir clairement mes progrès :)" data-ol="fr">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Mon fils a des cours avec Adrian depuis août 2024 et je vois beaucoup de progrès dans son niveau de français et ses notes à l&#39;école. Je recommande vivement Adrian pour sa compréhension profonde des techniques d&#39;enseignement et sa capacité à trouver une clé pour chaque étudiant !&quot;, &quot;ua&quot;: &quot;Мій син займається з Адріаном з серпня 2024 року, і я бачу великий прогрес у рівні французької та його оцінках у школі. Я дуже рекомендую Адріана за його глибоке розуміння методів навчання та здатність знайти підхід до будь-якого учня!&quot;, &quot;en&quot;: &quot;My son has been having lessons with Adrian since August 2024 and I see a lot of progress in my son&#39;s level of French and his scores at the school. I strongly recommend Adrian for his deep understanding of teaching technics and his ability to find a key to any student! Adrian is definitely a Super-Tutor!&quot;, &quot;ru&quot;: &quot;Мой сын занимается с Адрианом с августа 2024 года, и я вижу большой прогресс в уровне французского и его оценках в школе. Я настоятельно рекомендую Адриана за его глубокое понимание методик обучения и умение найти подход к любому ученику!&quot;, &quot;orig&quot;: &quot;My son has been having lessons with Adrian since August 2024 and I see a lot of progress in my son&#39;s level of French and his scores at the school. I strongly recommend Adrian for his deep understanding of teaching technics and his ability to find a key to any student! Adrian is definitely a Super-Tutir!&quot;, &quot;orig_lang&quot;: &quot;en&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-21.jpeg" class="rc-av" alt="Olga" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">O</div>
+    <div><div class="rc-name">Olga</div><div class="rc-date" data-fr="28 octobre 2024" data-ua="28 жовтня 2024" data-en="October 28, 2024" data-ru="28 октября 2024">28 жовтня 2024</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="My son has been having lessons with Adrian since August 2024 and I see a lot of progress in my son&#39;s level of French and his scores at the school. I strongly recommend Adrian for his deep understanding of teaching technics and his ability to find a key to any student! Adrian is definitely a Super-Tutir!" data-ol="en">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Les cours sont très intéressants, je recommande ! :)&quot;, &quot;ua&quot;: &quot;Заняття дуже цікаві, рекомендую! :)&quot;, &quot;en&quot;: &quot;The lessons are very interesting, I recommend! :)&quot;, &quot;ru&quot;: &quot;Занятия очень интересные, рекомендую! :)&quot;, &quot;orig&quot;: &quot;Заняття дуже цікаві, рекомендую! :)&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-4.png" class="rc-av" alt="Yana" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">Y</div>
+    <div><div class="rc-name">Yana</div><div class="rc-date" data-fr="15 octobre 2024" data-ua="15 жовтня 2024" data-en="October 15, 2024" data-ru="15 октября 2024">15 жовтня 2024</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Заняття дуже цікаві, рекомендую! :)" data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Adrian est un super tuteur ! Les cours sont toujours intéressants et productifs, il explique le matériel clairement et avec enthousiasme. Grâce à l&#39;approche individuelle, j&#39;améliore rapidement mes connaissances.&quot;, &quot;ua&quot;: &quot;Adrian – чудовий репетитор! Заняття завжди цікаві та продуктивні, пояснює матеріал доступно і з ентузіазмом. Завдяки індивідуальному підходу, я швидко покращую свої знання.&quot;, &quot;en&quot;: &quot;Adrian is a great tutor! Lessons are always interesting and productive, he explains material clearly and with enthusiasm. Thanks to the individual approach, I quickly improve my knowledge.&quot;, &quot;ru&quot;: &quot;Адриан — отличный репетитор! Занятия всегда интересные и продуктивные, объясняет материал доступно и с энтузиазмом. Благодаря индивидуальному подходу я быстро совершенствую свои знания.&quot;, &quot;orig&quot;: &quot;Adrian – чудовий репетитор! Заняття завжди цікаві та продуктивні, пояснює матеріал доступно і з ентузіазмом. Завдяки індивідуальному підходу, я швидко покращую свої знання.&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-4.png" class="rc-av" alt="Наталія" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">Н</div>
+    <div><div class="rc-name">Наталія</div><div class="rc-date" data-fr="8 octobre 2024" data-ua="8 жовтня 2024" data-en="October 8, 2024" data-ru="8 октября 2024">8 жовтня 2024</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Adrian – чудовий репетитор! Заняття завжди цікаві та продуктивні, пояснює матеріал доступно і з ентузіазмом. Завдяки індивідуальному підходу, я швидко покращую свої знання." data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Andrian est un professeur très agréable et professionnel. Chaque cours se déroule dans une atmosphère positive. Si vous voulez apprendre facilement et avec plaisir — allez le voir.&quot;, &quot;ua&quot;: &quot;Андріан дуже приємний та професійний викладач. Кожне заняття проходить з позитивними емоціями. Якщо хочете навчатися легко із задоволенням — вам до нього.&quot;, &quot;en&quot;: &quot;Andrian is a very pleasant and professional teacher. Every lesson goes with positive emotions. If you want to learn easily and with pleasure — he&#39;s the one for you.&quot;, &quot;ru&quot;: &quot;Андриан очень приятный и профессиональный преподаватель. Каждое занятие проходит с позитивными эмоциями. Если хотите учиться легко и с удовольствием — вам к нему.&quot;, &quot;orig&quot;: &quot;Андріан дуже приємний та професійний викладач. Кожне заняття проходить з позитивними емоціями. Якщо хочете навчатися легко із задоволенням - вам до нього.&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-22.jpeg" class="rc-av" alt="Olha" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">O</div>
+    <div><div class="rc-name">Olha</div><div class="rc-date" data-fr="28 septembre 2024" data-ua="28 вересня 2024" data-en="September 28, 2024" data-ru="28 сентября 2024">28 вересня 2024</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Андріан дуже приємний та професійний викладач. Кожне заняття проходить з позитивними емоціями. Якщо хочете навчатися легко із задоволенням - вам до нього." data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Adrian est mon professeur de français depuis plus de deux mois. Ayant travaillé avec d&#39;autres enseignants, je n&#39;ai jamais observé de progrès aussi rapides. Il est responsable, maîtrise parfaitement le français, partage plein de faits intéressants, et est toujours motivant. Je le recommande à tout le monde !&quot;, &quot;ua&quot;: &quot;Вже більше двох місяців Адріан є моїм вчителем французької мови. Маючи досвід роботи з іншими викладачами, я ніколи не помічала такого швидкого прогресу, як під його керівництвом. Він відповідальний, досконало володіє французькою мовою, розповідає безліч цікавих фактів, а також веселий і завжди мотивує. Я щиро вдячна йому за сумлінну працю і рада, що саме він є моїм викладачем. Без вагань рекомендую його всім!&quot;, &quot;en&quot;: &quot;Adrian has been my French teacher for over two months now. Having experience with other teachers, I have never noticed such rapid progress as under his guidance. He is responsible, speaks French perfectly, shares lots of interesting facts, and is always motivating. I sincerely recommend him to everyone!&quot;, &quot;ru&quot;: &quot;Адриан является моим учителем французского уже более двух месяцев. Имея опыт работы с другими преподавателями, я никогда не замечала такого быстрого прогресса. Он ответственный, в совершенстве владеет французским, рассказывает много интересных фактов, веселый и всегда мотивирует. Настоятельно рекомендую всем!&quot;, &quot;orig&quot;: &quot;Вже більше двох місяців Адріан є моїм вчителем французької мови. Маючи досвід роботи з іншими викладачами, я ніколи не помічала такого швидкого прогресу, як під його керівництвом. Він відповідальний, досконало володіє французькою мовою, розповідає безліч цікавих фактів, а також веселий і завжди мотивує. Я щиро вдячна йому за сумлінну працю і рада, що саме він є моїм викладачем. Без вагань рекомендую його всім!&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-23.jpeg" class="rc-av" alt="Diana" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">D</div>
+    <div><div class="rc-name">Diana</div><div class="rc-date" data-fr="27 août 2024" data-ua="27 серпня 2024" data-en="August 27, 2024" data-ru="27 августа 2024">27 серпня 2024</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Вже більше двох місяців Адріан є моїм вчителем французької мови. Маючи досвід роботи з іншими викладачами, я ніколи не помічала такого швидкого прогресу, як під його керівництвом. Він відповідальний, досконало володіє французькою мовою, розповідає безліч цікавих фактів, а також веселий і завжди мотивує. Я щиро вдячна йому за сумлінну працю і рада, що саме він є моїм викладачем. Без вагань рекомендую його всім!" data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Bon travail avec les élèves. Bonne présentation du matériel. Aucun point négatif.&quot;, &quot;ua&quot;: &quot;Гарна робота з учнями. Хороша подача матеріалу. Мінусів немає.&quot;, &quot;en&quot;: &quot;Good work with students. Good presentation of material. No negatives.&quot;, &quot;ru&quot;: &quot;Хорошая работа с учениками. Хорошая подача материала. Минусов нет.&quot;, &quot;orig&quot;: &quot;Хорошая работа с учениками. Хорошая подача материала. Минусов нет&quot;, &quot;orig_lang&quot;: &quot;ru&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-4.png" class="rc-av" alt="Viktoria" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">V</div>
+    <div><div class="rc-name">Viktoria</div><div class="rc-date" data-fr="5 juillet 2024" data-ua="5 липня 2024" data-en="July 5, 2024" data-ru="5 июля 2024">5 липня 2024</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Хорошая работа с учениками. Хорошая подача материала. Минусов нет" data-ol="ru">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Adrian est un super prof de français. Il explique bien et rend l&#39;apprentissage amusant. Je progresse vite avec lui. Merci beaucoup !!! 🙏&quot;, &quot;ua&quot;: &quot;Адріан — чудовий вчитель французької. Він добре пояснює і робить навчання цікавим. Я швидко прогресую з ним. Велике дякую !!! 🙏&quot;, &quot;en&quot;: &quot;Adrian is a great French teacher. He explains well and makes learning fun. I&#39;m progressing quickly with him. Thank you very much !!! 🙏&quot;, &quot;ru&quot;: &quot;Адриан — замечательный учитель французского. Он хорошо объясняет и делает обучение интересным. Я быстро прогрессирую с ним. Большое спасибо !!! 🙏&quot;, &quot;orig&quot;: &quot;Adrian est un super prof de français. Il explique bien et rend l&#39;apprentissage amusant. Je progresse vite avec lui. Merci beaucoup !!! 🙏&quot;, &quot;orig_lang&quot;: &quot;fr&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-24.jpeg" class="rc-av" alt="Daria" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">D</div>
+    <div><div class="rc-name">Daria</div><div class="rc-date" data-fr="22 décembre 2023" data-ua="22 грудня 2023" data-en="December 22, 2023" data-ru="22 декабря 2023">22 грудня 2023</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Adrian est un super prof de français. Il explique bien et rend l&#39;apprentissage amusant. Je progresse vite avec lui. Merci beaucoup !!! 🙏" data-ol="fr">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Tellement heureuse d&#39;avoir Adrian comme prof de français ! — les cours ne sont jamais ennuyeux — matériaux développés par lui-même — interlocuteur intelligent et polyvalent. On ne pourrait demander mieux !&quot;, &quot;ua&quot;: &quot;Так радію, що Адріан — мій викладач французької! — уроки ніколи не нудні — власноруч розроблені матеріали — розумний і різносторонній співрозмовник. Краще і не побажаєш :)&quot;, &quot;en&quot;: &quot;So happy to get Adrian as my French tutor! — lessons are never boring — own-developed materials — intelligent and versatile interlocutor. You could not wish for more!&quot;, &quot;ru&quot;: &quot;Так рада, что у меня Адриан как репетитор по французскому! — уроки никогда не скучные — материалы собственной разработки — умный и разносторонний собеседник. Лучшего не пожелаешь!&quot;, &quot;orig&quot;: &quot;So happy to get Adrian as my French tutor! - lessons are never boring - own-developed materials - intelligent and versatile interlocutor You could not wish for more)&quot;, &quot;orig_lang&quot;: &quot;en&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-25.jpeg" class="rc-av" alt="Yeap" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">Y</div>
+    <div><div class="rc-name">Yeap</div><div class="rc-date" data-fr="13 juin 2023" data-ua="13 червня 2023" data-en="June 13, 2023" data-ru="13 июня 2023">13 червня 2023</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="So happy to get Adrian as my French tutor! - lessons are never boring - own-developed materials - intelligent and versatile interlocutor You could not wish for more)" data-ol="en">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Adrian met vraiment de l&#39;énergie et de l&#39;enthousiasme dans chaque cours et s&#39;intéresse vraiment à mes progrès. On peut parler de n&#39;importe quel sujet avec lui, il est toujours bien préparé, fournit ses propres matériaux et partage des ressources utiles. Ce que j&#39;aime le plus, c&#39;est son attitude positive et son vrai enthousiasme pour la langue. Je recommande vraiment !&quot;, &quot;ua&quot;: &quot;Адріан дійсно вкладає енергію та ентузіазм в кожне заняття і справді цікавиться моїм прогресом. З ним можна вести розмову на будь-яку тему, він завжди добре підготовлений, надає свої власні матеріали а також ділиться корисними ресурсами. Найбільше мені подобається його позитивний настрій і справжнє захоплення мовою. Дуже рекомендую!&quot;, &quot;en&quot;: &quot;Adrian really puts energy and enthusiasm into every lesson and genuinely cares about my progress. You can have a conversation with him on any topic, he is always well prepared, provides his own materials and shares useful resources. What I like most is his positive attitude and genuine passion for the language. Highly recommend!&quot;, &quot;ru&quot;: &quot;Адриан действительно вкладывает энергию и энтузиазм в каждое занятие и искренне интересуется моим прогрессом. С ним можно вести разговор на любую тему, он всегда хорошо подготовлен, предоставляет свои собственные материалы и делится полезными ресурсами. Больше всего нравится его позитивный настрой и настоящая увлечённость языком. Очень рекомендую!&quot;, &quot;orig&quot;: &quot;Адріан дійсно вкладає енергію та ентузіазм в кожне заняття і справді цікавиться моїм прогресом. З ним можна вести розмову на будь-яку тему, він завжди добре підготовлений, надає свої власні матеріали а також ділиться корисними ресурсами. Найбільше мені подобається його позитивний настрій і справжнє захоплення мовою. Дуже рекомендую!&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-26.jpeg" class="rc-av" alt="Natalia" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">N</div>
+    <div><div class="rc-name">Natalia</div><div class="rc-date" data-fr="22 mai 2023" data-ua="22 травня 2023" data-en="May 22, 2023" data-ru="22 мая 2023">22 травня 2023</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Адріан дійсно вкладає енергію та ентузіазм в кожне заняття і справді цікавиться моїм прогресом. З ним можна вести розмову на будь-яку тему, він завжди добре підготовлений, надає свої власні матеріали а також ділиться корисними ресурсами. Найбільше мені подобається його позитивний настрій і справжнє захоплення мовою. Дуже рекомендую!" data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Adrian est un bon professeur, c&#39;est intéressant et agréable d&#39;apprendre la langue avec lui. Les cours se déroulent de façon vivante, détendue et productive !!&quot;, &quot;ua&quot;: &quot;Адріан - гарний викладач, з ним цікаво та приємно вивчати мову. Заняття проходять жваво, невимушено та результативно!!&quot;, &quot;en&quot;: &quot;Adrian is a great teacher, it&#39;s interesting and pleasant to learn the language with him. Lessons are lively, relaxed and productive!!&quot;, &quot;ru&quot;: &quot;Адриан — хороший преподаватель, с ним интересно и приятно изучать язык. Занятия проходят живо, непринуждённо и результативно!!&quot;, &quot;orig&quot;: &quot;Адріан - гарний викладач, з ним цікаво та приємно вивчати мову. Заняття проходять жваво, невимушено та результативно!!&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-4.png" class="rc-av" alt="Lidiia" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">L</div>
+    <div><div class="rc-name">Lidiia</div><div class="rc-date" data-fr="20 mai 2023" data-ua="20 травня 2023" data-en="May 20, 2023" data-ru="20 мая 2023">20 травня 2023</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Адріан - гарний викладач, з ним цікаво та приємно вивчати мову. Заняття проходять жваво, невимушено та результативно!!" data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Bon professeur, s&#39;adapte à l&#39;élève et ajuste le programme si nécessaire. Je prends des cours depuis environ un an, je recommande à tous !&quot;, &quot;ua&quot;: &quot;Хороший викладач, підлаштовується під учня і коригує програму за потреби. Займаюся вже близько року, всім рекомендую!&quot;, &quot;en&quot;: &quot;Good teacher, adapts to the student and adjusts the programme as needed. I&#39;ve been studying for about a year, I recommend to everyone!&quot;, &quot;ru&quot;: &quot;Хороший преподаватель, подстраивается под ученика и корректирует программу при необходимости. Занимаюсь уже около года, всем рекомендую!&quot;, &quot;orig&quot;: &quot;Хороший викладач, підлаштовується під учня і коригує програму за потреби. Займаюся вже близько року, всім рекомендую!&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-27.jpeg" class="rc-av" alt="Max" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">M</div>
+    <div><div class="rc-name">Max</div><div class="rc-date" data-fr="10 mai 2023" data-ua="10 травня 2023" data-en="May 10, 2023" data-ru="10 мая 2023">10 травня 2023</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Хороший викладач, підлаштовується під учня і коригує програму за потреби. Займаюся вже близько року, всім рекомендую!" data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;J&#39;étais dans un cours avec Adrian et je tiens à vous remercier de m&#39;avoir aidé dans mes études. Une explication intéressante et accessible du matériel, des tâches et de la pratique dans un format compréhensible. Je recommande ce professeur !&quot;, &quot;ua&quot;: &quot;Я був на занятті з Адріаном і хочу подякувати за допомогу в навчанні. Цікаве та доступне пояснення матеріалу, завдань та практики у зрозумілому форматі. Рекомендую цього викладача!&quot;, &quot;en&quot;: &quot;I attended a lesson with Adrian and want to thank him for the help in learning. Interesting and accessible explanation of material, tasks and practice in a format easy to understand. I recommend this teacher!&quot;, &quot;ru&quot;: &quot;Я был на занятии с Адрианом и хочу поблагодарить за помощь в учёбе. Интересное и доступное объяснение материала, заданий и практики в понятном формате. Рекомендую этого преподавателя!&quot;, &quot;orig&quot;: &quot;Я був на занятті з Андріаном і хочу подякувати вам за допомогу в навчанні. Цікаве та доступне пояснення матеріалу, завдань та практики у зрозумілому для мене форматі. Рекомендую цього викладача! J&#39;étais dans un cours avec Andrian et je tiens à vous remercier de m&#39;avoir aidé dans mes études. Une explication intéressante et accessible du matériel, des tâches et de la pratique dans un format compréhensible pour moi. Je recommande ce professeur !&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-28.jpeg" class="rc-av" alt="Inna" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">I</div>
+    <div><div class="rc-name">Inna</div><div class="rc-date" data-fr="20 avril 2023" data-ua="20 квітня 2023" data-en="April 20, 2023" data-ru="20 апреля 2023">20 квітня 2023</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Я був на занятті з Андріаном і хочу подякувати вам за допомогу в навчанні. Цікаве та доступне пояснення матеріалу, завдань та практики у зрозумілому для мене форматі. Рекомендую цього викладача! J&#39;étais dans un cours avec Andrian et je tiens à vous remercier de m&#39;avoir aidé dans mes études. Une explication intéressante et accessible du matériel, des tâches et de la pratique dans un format compréhensible pour moi. Je recommande ce professeur !" data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Mon fils adore les cours avec Adrian, surtout la communication et la façon de présenter les nouvelles notions.&quot;, &quot;ua&quot;: &quot;Синові дуже подобаються заняття з Адріаном, особливо спілкування, подання нового.&quot;, &quot;en&quot;: &quot;My son really enjoys lessons with Adrian, especially the communication and the way new material is presented.&quot;, &quot;ru&quot;: &quot;Сыну очень нравятся занятия с Адрианом, особенно общение и подача нового материала.&quot;, &quot;orig&quot;: &quot;Синові дуже подобаються заняття з Адріаном, особливо спілкування, подання нового.&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-29.jpeg" class="rc-av" alt="Татьяна" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">Т</div>
+    <div><div class="rc-name">Татьяна</div><div class="rc-date" data-fr="28 février 2023" data-ua="28 лютого 2023" data-en="February 28, 2023" data-ru="28 февраля 2023">28 лютого 2023</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Синові дуже подобаються заняття з Адріаном, особливо спілкування, подання нового." data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Idéal.&quot;, &quot;ua&quot;: &quot;Ідеально.&quot;, &quot;en&quot;: &quot;Ideal.&quot;, &quot;ru&quot;: &quot;Идеально.&quot;, &quot;orig&quot;: &quot;идиально&quot;, &quot;orig_lang&quot;: &quot;ru&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-30.jpeg" class="rc-av" alt="Olga" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">O</div>
+    <div><div class="rc-name">Olga</div><div class="rc-date" data-fr="27 février 2023" data-ua="27 лютого 2023" data-en="February 27, 2023" data-ru="27 февраля 2023">27 лютого 2023</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="идиально" data-ol="ru">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Bon professeur, il développe l&#39;amour de la langue — c&#39;est l&#39;essentiel !&quot;, &quot;ua&quot;: &quot;Гарний вчитель, прививає любов до мови це головне !&quot;, &quot;en&quot;: &quot;Good teacher, instils a love for the language — that&#39;s the most important thing!&quot;, &quot;ru&quot;: &quot;Хороший учитель, прививает любовь к языку — это главное!&quot;, &quot;orig&quot;: &quot;Гарний вчитель, прививає любов до мови це головне !&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-31.jpeg" class="rc-av" alt="Александр" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">А</div>
+    <div><div class="rc-name">Александр</div><div class="rc-date" data-fr="11 janvier 2023" data-ua="11 січня 2023" data-en="January 11, 2023" data-ru="11 января 2023">11 січня 2023</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Гарний вчитель, прививає любов до мови це головне !" data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Презентація крута! Але виявилося, що навчання ще краще!! Цікаво, ефективно і по-французьки! 😎&quot;, &quot;ua&quot;: &quot;Презентація крута! Але виявилося, що навчання ще краще!! Цікаво, ефективно і по-французьки! 😎&quot;, &quot;en&quot;: &quot;Презентація крута! Але виявилося, що навчання ще краще!! Цікаво, ефективно і по-французьки! 😎&quot;, &quot;ru&quot;: &quot;Презентація крута! Але виявилося, що навчання ще краще!! Цікаво, ефективно і по-французьки! 😎&quot;, &quot;orig&quot;: &quot;Презентація крута! Але виявилося, що навчання ще краще!! Цікаво, ефективно і по-французьки! 😎&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-32.jpeg" class="rc-av" alt="薇妲 Veda" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">薇</div>
+    <div><div class="rc-name">薇妲 Veda</div><div class="rc-date" data-fr="10 janvier 2023" data-ua="10 січня 2023" data-en="January 10, 2023" data-ru="10 января 2023">10 січня 2023</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Презентація крута! Але виявилося, що навчання ще краще!! Цікаво, ефективно і по-французьки! 😎" data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Adrian est un très bon professeur, l&#39;apprentissage se passe facilement et clairement. Le matériel est bien sélectionné, et le professeur est positif, patient et professionnel. En choisissant Adrian, vous ne regretterez pas ! Je recommande !!!&quot;, &quot;ua&quot;: &quot;Адріан-дуже хороший викладач,навчання проходить легко і доступно,так,як матеріал підібраний грамотно і викладач є позитивним,терплячим,він професійно і відповідально ставиться до своєї роботи.Обираючи Адріана,ви не пожалкуєте!Рекомендую!!!&quot;, &quot;en&quot;: &quot;Adrian is a very good teacher, learning goes easily and accessibly, as the material is well selected and the teacher is positive, patient, and professional. Choosing Adrian, you won&#39;t regret it! I recommend!!!&quot;, &quot;ru&quot;: &quot;Адриан — очень хороший преподаватель, обучение проходит легко и доступно, так как материал подобран грамотно, а преподаватель позитивный, терпеливый, профессионально и ответственно относится к своей работе. Выбирая Адриана, вы не пожалеете! Рекомендую!!!&quot;, &quot;orig&quot;: &quot;Адріан-дуже хороший викладач,навчання проходить легко і доступно,так,як матеріал підібраний грамотно і викладач є позитивним,терплячим,він професійно і відповідально ставиться до своєї роботи.Обираючи Адріана,ви не пожалкуєте!Рекомендую!!!&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-4.png" class="rc-av" alt="Stauffer" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">S</div>
+    <div><div class="rc-name">Stauffer</div><div class="rc-date" data-fr="4 août 2022" data-ua="4 серпня 2022" data-en="August 4, 2022" data-ru="4 августа 2022">4 серпня 2022</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Адріан-дуже хороший викладач,навчання проходить легко і доступно,так,як матеріал підібраний грамотно і викладач є позитивним,терплячим,він професійно і відповідально ставиться до своєї роботи.Обираючи Адріана,ви не пожалкуєте!Рекомендую!!!" data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Adrian enseigne de façon très structurée, cohérente, interactive et intéressante. J&#39;éprouve un immense plaisir lors des cours, et surtout — je vois des résultats dès le premier mois. Professeur talentueux. Je recommande.&quot;, &quot;ua&quot;: &quot;Адріан викладає дуже структуровано, послідовно, інтерактивно та цікаво. Отримую надзвичайне задоволення від уроків, а головне - бачу результат вже за місяць. Талановитий викладач. Рекомендую.&quot;, &quot;en&quot;: &quot;Adrian teaches in a very structured, consistent, interactive and interesting way. I enjoy the lessons immensely, and most importantly — I can see results within just a month. Talented teacher. I recommend.&quot;, &quot;ru&quot;: &quot;Адриан преподаёт очень структурировано, последовательно, интерактивно и интересно. Получаю огромное удовольствие от уроков, а главное — вижу результат уже за месяц. Талантливый преподаватель. Рекомендую.&quot;, &quot;orig&quot;: &quot;Адріан викладає дуже структуровано, послідовно, інтерактивно та цікаво. Отримую надзвичайне задоволення від уроків, а головне - бачу результат вже за місяць. Талановитий викладач. Рекомендую.&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-33.jpeg" class="rc-av" alt="Olha" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">O</div>
+    <div><div class="rc-name">Olha</div><div class="rc-date" data-fr="23 juin 2022" data-ua="23 червня 2022" data-en="June 23, 2022" data-ru="23 июня 2022">23 червня 2022</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Адріан викладає дуже структуровано, послідовно, інтерактивно та цікаво. Отримую надзвичайне задоволення від уроків, а головне - бачу результат вже за місяць. Талановитий викладач. Рекомендую." data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Adrian est un super professeur. J&#39;aime beaucoup son approche globale. Ce ne sont pas de simples cours de français — c&#39;est de la créativité et une exploration du monde. Mon fils est ravi des cours. Il a commencé à écrire très rapidement. Grand merci !&quot;, &quot;ua&quot;: &quot;Адріан - классний викладач. Дуже подобається його комплексний підхід. Це не просто уроки французьської мови. Це і творчість і вивчення всесвіту. Син в захваті від занять. Дуже швидко почав писати. Велике дякую!&quot;, &quot;en&quot;: &quot;Adrian is a great teacher. I really like his comprehensive approach. These are not just French language lessons — it&#39;s creativity and exploring the world. My son is delighted with the lessons. He started writing very quickly. Thank you very much!&quot;, &quot;ru&quot;: &quot;Адриан — классный преподаватель. Очень нравится его комплексный подход. Это не просто уроки французского. Это и творчество, и познание мира. Сын в восторге от занятий. Очень быстро начал писать. Большое спасибо!&quot;, &quot;orig&quot;: &quot;Адріан - классний викладач. Дуже подобається його комплексний підхід. Це не просто уроки французьської мови. Це і творчість і вивчення всесвіту. Син в захваті від занять. Дуже швидко почав писати. Велике дякую!&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-34.jpeg" class="rc-av" alt="Ирина" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">И</div>
+    <div><div class="rc-name">Ирина</div><div class="rc-date" data-fr="6 mai 2022" data-ua="6 травня 2022" data-en="May 6, 2022" data-ru="6 мая 2022">6 травня 2022</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Адріан - классний викладач. Дуже подобається його комплексний підхід. Це не просто уроки французьської мови. Це і творчість і вивчення всесвіту. Син в захваті від занять. Дуже швидко почав писати. Велике дякую!" data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Les cours avec Adrian sont incroyablement intéressants, joyeux et informatifs ! Un grand atout est sa prononciation, très agréable à écouter et qu&#39;on veut immédiatement imiter ! Adrian est très ponctuel, patient et polyvalent. Je suis vraiment contente de l&#39;avoir trouvé sur cette plateforme ! Sincèrement merci !&quot;, &quot;ua&quot;: &quot;Уроки з Адріаном неймовирно цікаві, веселі та інформативні! Великим плюсом є вимова, яку дуже приємно слухати і хочеться одразу імітувати!:) Адріан є дуже пунктуальним, терплячим та різностороннє обізнаним!Я дуже рада, що знайшла його на цій платформі, адже для мене це є вагомими плюсами у виборі викладача! Щиро дякую!&quot;, &quot;en&quot;: &quot;Lessons with Adrian are incredibly interesting, fun and informative! A great plus is his pronunciation, which is very pleasant to listen to and makes you want to imitate it immediately! Adrian is very punctual, patient and knowledgeable. I&#39;m so glad I found him on this platform! Sincerely thank you!&quot;, &quot;ru&quot;: &quot;Уроки с Адрианом невероятно интересные, весёлые и информативные! Большой плюс — его произношение, которое очень приятно слушать и хочется сразу имитировать! Адриан очень пунктуальный, терпеливый и разносторонне эрудированный. Я очень рада, что нашла его на этой платформе! Искренне спасибо!&quot;, &quot;orig&quot;: &quot;Уроки з Адріаном неймовирно цікаві, веселі та інформативні! Великим плюсом є вимова, яку дуже приємно слухати і хочеться одразу імітувати!:) Адріан є дуже пунктуальним, терплячим та різностороннє обізнаним!Я дуже рада, що знайшла його на цій платформі, адже для мене це є вагомими плюсами у виборі викладача! Щиро дякую!&quot;, &quot;orig_lang&quot;: &quot;ua&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-35.jpeg" class="rc-av" alt="Mariia" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">M</div>
+    <div><div class="rc-name">Mariia</div><div class="rc-date" data-fr="18 mars 2022" data-ua="18 березня 2022" data-en="March 18, 2022" data-ru="18 марта 2022">18 березня 2022</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Уроки з Адріаном неймовирно цікаві, веселі та інформативні! Великим плюсом є вимова, яку дуже приємно слухати і хочеться одразу імітувати!:) Адріан є дуже пунктуальним, терплячим та різностороннє обізнаним!Я дуже рада, що знайшла його на цій платформі, адже для мене це є вагомими плюсами у виборі викладача! Щиро дякую!" data-ol="ua">Original</button>
+</div>
+</div>
+<div class="rc rv" data-texts="{&quot;fr&quot;: &quot;Professeur remarquable ! Maître de son art ! Présentation habile du matériel, et surtout les cours se déroulent dans une atmosphère amicale, ce qui favorise l&#39;apprentissage du français ! Je recommande à tous, vous ne resterez pas indifférents, je vous assure :)&quot;, &quot;ua&quot;: &quot;Чудовий викладач! Майстер своєї справи! Грамотна подача матеріалу, а головне уроки проходять у дружній атмосфері, що сприяє вивченню французької! Всім рекомендую, ви не залишитесь байдужими, запевняю :)&quot;, &quot;en&quot;: &quot;Wonderful teacher! Master of their craft! Skillful delivery of material, and most importantly lessons take place in a friendly atmosphere, which promotes learning French! I recommend to everyone, you won&#39;t remain indifferent, I assure you :)&quot;, &quot;ru&quot;: &quot;Замечательный преподаватель! Мастер своего дела! Грамотная подача материала, а главное уроки проходят в дружеской атмосфере, что способствует изучению французского! Всем рекомендую, не останетесь равнодушны, я вас уверяю:)&quot;, &quot;orig&quot;: &quot;Замечательный преподаватель! Мастер своего дела! Грамотная подача материала, а главное уроки проходят в дружеской атмосфере, что способствует изучению французского! Всем рекомендую, не останетесь равнодушны, я вас уверяю:)&quot;, &quot;orig_lang&quot;: &quot;ru&quot;}">
+<div class="rc-top"><div class="rc-stars">★★★★★</div></div>
+<p class="rc-text rc-disp"></p>
+<div class="rc-footer">
+  <div class="rc-author">
+    <img src="images/avatar-36.jpeg" class="rc-av" alt="Fab" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+    <div class="rc-av-fb" style="display:none">F</div>
+    <div><div class="rc-name">Fab</div><div class="rc-date" data-fr="21 février 2022" data-ua="21 лютого 2022" data-en="February 21, 2022" data-ru="21 февраля 2022">21 лютого 2022</div></div>
+  </div>
+  <button class="rc-orig-btn" data-orig="Замечательный преподаватель! Мастер своего дела! Грамотная подача материала, а главное уроки проходят в дружеской атмосфере, что способствует изучению французского! Всем рекомендую, не останетесь равнодушны, я вас уверяю:)" data-ol="ru">Original</button>
+</div>
+</div>
+</div>
+  <p class="rev-nt"><span id="rev-note" data-t="rev_note">* Avis en langue originale</span> · <a href="https://preply.com/ua/repetytor/269905#reviews" target="_blank">Preply.com</a></p>
+  <footer><p data-t="footer_copy">© 2026 Adrian Margolin</p><div class="fl"><a href="#" id="fl-rev-h" data-t="nav_home">Accueil</a><a href="#" id="fl-rev-b" data-t="nav_booking">Réserver</a></div></footer>
+</section>
+
+<!-- LESSONS -->
+<section id="page-lessons" class="page">
+  <div class="lesh">
+    <div class="rv">
+      
+      <h2 class="st" data-th="les_title">Comment <em>ça se passe</em>, vraiment.</h2>
+      <p class="sb" data-t="les_desc">Chaque cours est unique.</p>
+    </div>
+    <div class="steps">
+      <div class="step rv" style="transition-delay:.1s"><div class="sn">01</div><div class="stit" data-t="step1_title">On se connaît</div><div class="sdesc" data-t="step1_desc">Avant tout, j'écoute.</div></div>
+      <div class="step rv" style="transition-delay:.2s"><div class="sn">02</div><div class="stit" data-t="step2_title">On s'adapte</div><div class="sdesc" data-t="step2_desc">Pas de programme fixe.</div></div>
+      <div class="step rv" style="transition-delay:.3s"><div class="sn">03</div><div class="stit" data-t="step3_title">On progresse</div><div class="sdesc" data-t="step3_desc">Tout converge vers une seule chose.</div></div>
+    </div>
+  </div>
+  <div class="progsec">
+    <div class="rv">
+      <span class="lbl" data-t="prog_lbl">Programme indicatif</span>
+      <h3 class="st" data-th="prog_title">Exemples de <em>ressources utilisées</em>.</h3>
+      <p class="sb" style="margin-bottom:24px;" data-t="prog_desc">Une sélection indicative.</p>
+    </div>
+    <div class="prog-note rv" id="prog-note">À chaque niveau : grammaire, oral, phonétique, etc. — toujours adapté à vos objectifs.</div>
+    <div class="progtabs rv">
+      <button class="ptab on" id="pt-a1" data-t="prog_tab_a1">A1 · Débutant</button>
+      <button class="ptab" id="pt-a2" data-t="prog_tab_a2">A2 · Élémentaire</button>
+      <button class="ptab" id="pt-b1" data-t="prog_tab_b1">B1 · Intermédiaire</button>
+      <button class="ptab" id="pt-b2c2" data-t="prog_tab_b2c2">B2–C2</button>
+    </div>
+    <div id="prog-content" class="prog-wrap rv"></div>
+    <div style="text-align:center;margin-top:40px;"><button class="btn bf" id="btn-book-l" data-t="book_btn">Réserver un cours</button></div>
+  </div>
+
+  <div class="sec-sm rv les-bio-wrap">
+    <div style="max-width:720px;margin:0 auto;">
+      <span class="lbl" data-t="les_bio_lbl">Мій шлях</span>
+      <h3 class="st" style="margin-bottom:24px;" data-th="les_bio_title">Як я став <em>викладачем</em>.</h3>
+      <div class="les-bio-text" data-t="les_bio_text" style="font-size:15px;font-weight:300;line-height:1.85;color:var(--ink2);white-space:pre-line;"></div>
+    </div>
+  </div>
+  <footer><p data-t="footer_copy">© 2026 Adrian Margolin</p><div class="fl"><a href="#" id="fl-les-h" data-t="nav_home">Accueil</a><a href="#" id="fl-les-b" data-t="nav_booking">Réserver</a><a href="#" id="fl-les-r" data-t="nav_reviews">Avis</a></div></footer>
+</section>
+
+<!-- PROJECTS -->
+<section id="page-projects" class="page">
+  <div class="sec">
+    <div class="rv"><span class="lbl" data-t="proj_lbl">Projets &amp; Ressources</span><h2 class="st" data-th="proj_title">Sur quoi je travaille <em>maintenant</em>.</h2></div>
+    <div class="pjg">
+      <div class="pjc rv" style="transition-delay:.05s"><div class="pct"><div class="pci" style="background:var(--il);">📚</div><span class="pcs swip" data-t="proj1_adv">Avancement</span></div><div class="pcb"><div class="pctit" data-t="proj1_title">Simplissime 2</div><p class="pcd" data-t="proj1_desc">Suite du manuel, niveau A2.</p><div class="pbr"><div class="pbl"><span data-t="proj1_adv">Avancement</span><span>~40%</span></div><div class="pb"><div class="pbf" data-t="40"></div></div></div></div></div>
+      <div class="pjc rv" style="transition-delay:.1s"><div class="pct"><div class="pci" style="background:var(--sl);">🔬</div><span class="pcs slive" data-t="proj2_done">Soutenue</span></div><div class="pcb"><div class="pctit" data-t="proj2_title">Thèse de doctorat</div><p class="pcd" data-th="proj2_desc">Compétence discursive en FLE.</p><div class="pbr"><div class="pbl"><span data-t="proj2_done">Soutenue</span><span>100%</span></div><div class="pb"><div class="pbf" data-t="100"></div></div></div></div></div>
+      <div class="pjc rv" style="transition-delay:.15s"><div class="pct"><div class="pci" style="background:var(--gl);">📝</div><span class="pcs slive">Publié</span></div><div class="pcb"><div class="pctit" data-t="proj3_title">Simplissime A1</div><p class="pcd" data-t="proj3_desc">Manuel de français.</p><div style="margin-top:14px;"><button class="btn bs" id="btn-proj-shop" style="font-size:11px;padding:9px 16px;" data-t="proj3_btn">Voir en boutique →</button></div></div></div>
+      <div class="pjc rv" style="transition-delay:.2s"><div class="pct"><div class="pci" style="background:var(--rl);">🎓</div><span class="pcs slive">Publié</span></div><div class="pcb"><div class="pctit" data-t="proj4_title">Freelance Teacher's Guide</div><p class="pcd" data-t="proj4_desc">Guide pour enseignants.</p><div style="margin-top:14px;"><a href="https://www.amazon.com/Successful-Freelance-Language-Teachers-Guide/dp/B0DXBX1CK7" target="_blank" class="btn bo" style="font-size:11px;padding:9px 16px;" data-t="proj4_btn">Voir sur Amazon →</a></div></div></div>
+    
+    <div class="pjg" style="margin-top:32px;">
+      <div class="pjc rv" style="transition-delay:.05s"><div class="pct"><div class="pci" style="background:#e8f4e8;">▶</div><span class="pcs slive" data-t="free1_type">YouTube</span></div><div class="pcb"><div class="pctit" data-t="free1_title">Chaîne YouTube</div><p class="pcd" data-t="free1_desc">Vidéos pédagogiques.</p><div style="margin-top:14px;"><a href="https://www.youtube.com/@Adrifrench" target="_blank" class="btn bo" style="font-size:11px;padding:9px 16px;" data-t="free1_btn">Voir →</a></div></div></div>
+      <div class="pjc rv" style="transition-delay:.10s"><div class="pct"><div class="pci" style="background:#f4e8f4;">📷</div><span class="pcs slive" data-t="free2_type">Instagram</span></div><div class="pcb"><div class="pctit" data-t="free2_title">@french_space</div><p class="pcd" data-t="free2_desc">Astuces et exercices.</p><div style="margin-top:14px;"><a href="https://www.instagram.com/french_space/" target="_blank" class="btn bo" style="font-size:11px;padding:9px 16px;" data-t="free2_btn">Suivre →</a></div></div></div>
+      <div class="pjc rv" style="transition-delay:.15s"><div class="pct"><div class="pci" style="background:var(--ml);">📄</div><span class="pcs slive" data-t="free3_type">PDF gratuit</span></div><div class="pcb"><div class="pctit" data-t="free3_title">Jak určit rod podstatných jmen</div><p class="pcd" data-t="free3_desc">Exercices et fiches.</p><div style="margin-top:14px;"><a href="https://drive.google.com/file/d/1QJc8rSBosfT6Vc7KgIUzkHit9D2--RUb/view?usp=drive_link" target="_blank" class="btn bo" style="font-size:11px;padding:9px 16px;" data-t="free3_btn">Télécharger →</a></div></div></div>
+    </div>
+  </div>
+  <footer><p data-t="footer_copy">© 2026 Adrian Margolin</p><div class="fl"><a href="#" id="fl-proj-s" data-t="nav_shop">Boutique</a><a href="https://scholar.google.com/citations?user=JBs4-RoAAAAJ&hl=fr" target="_blank">Scholar</a></div></footer>
+</section>
+
+<!-- SHOP -->
+<section id="page-shop" class="page">
+  <div class="shoph"><span class="lbl" style="color:rgba(255,255,255,.42);" data-t="shop_lbl">Boutique</span><h2 class="st" style="color:white;font-size:clamp(18px,1.9vw,28px);" data-th="shop_title">Mes <em style="color:#FFD166;">publications</em>.</h2><p style="color:rgba(255,255,255,.55);font-size:14px;font-weight:300;line-height:1.7;margin-top:10px;" data-t="shop_desc">Manuels et guides.</p></div>
+  <div class="shopg">
+    <div class="shc rv" style="transition-delay:.05s"><div class="shcv" style="background:linear-gradient(135deg,#4F58A8,#3A4180);"><div class="shci"><div style="font-family:'Instrument Serif',serif;font-size:24px;color:white;line-height:1.1;margin-bottom:5px;">Simplissime</div><div style="font-family:'Syne',sans-serif;font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:9px;">Manuel de français</div><div style="background:#FFD166;color:#2A2440;font-family:'Syne',sans-serif;font-size:10px;font-weight:700;padding:3px 12px;border-radius:20px;">A1 · CECRL</div></div></div><div class="shcb"><div class="shcc" style="color:var(--indigo);" data-t="sc1_cat">Manuel pédagogique</div><div class="shct" data-t="sc1_title">Simplissime A1</div><p class="shcd" data-t="sc1_desc">Le manuel pour grands débutants.</p><div class="shcf"><a href="https://adrianmargolin.gumroad.com/l/Simplissime" target="_blank" class="btn bi" style="font-size:11px;padding:9px 14px;" data-t="sc1_btn">Acheter →</a></div></div></div>
+    <div class="shc rv" style="transition-delay:.1s"><div class="shcv" style="background:linear-gradient(135deg,#4E7D6A,#3d6455);"><div class="shci"><div style="font-family:'Instrument Serif',serif;font-size:15px;color:white;line-height:1.25;margin-bottom:7px;">The Successful<br>Freelance<br><em>Language Teacher's</em><br>Guide</div><div style="background:#B88C45;color:white;font-family:'Syne',sans-serif;font-size:9px;font-weight:700;padding:3px 10px;border-radius:20px;display:inline-block;">2025</div></div></div><div class="shcb"><div class="shcc" style="color:var(--sage);" data-t="sc2_cat">Guide professionnel</div><div class="shct" data-t="sc2_title">Freelance Teacher's Guide</div><p class="shcd" data-t="sc2_desc">Pour enseignants indépendants.</p><div class="shcf"><a href="https://www.amazon.com/Successful-Freelance-Language-Teachers-Guide/dp/B0DXBX1CK7" target="_blank" class="btn bs" style="font-size:11px;padding:9px 12px;">Amazon →</a></div></div></div>
+<div class="shc rv" style="transition-delay:.15s"><div class="shcv" style="background:linear-gradient(135deg,#8590B4,#4F58A8);"><div class="shci"><div style="font-family:'Instrument Serif',serif;font-size:18px;color:white;line-height:1.2;margin-bottom:4px;">Жива французька</div><div style="font-family:'Syne',sans-serif;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-top:4px;">Корисні фрази на кожен день</div></div></div><div class="shcb"><div class="shcc" style="color:var(--indigo);">Фрази</div><div class="shct">Жива французька</div><p class="shcd">Корисні фрази на кожен день — для реального спілкування.</p><div class="shcf"><a href="https://adrianmargolin.gumroad.com/l/french" target="_blank" class="btn bi" style="font-size:11px;padding:9px 14px;">Gumroad →</a></div></div></div>
+    <div class="shc rv" style="transition-delay:.15s"><div class="shcv" style="background:linear-gradient(135deg,#B96B5A,#D08878);"><div class="shci"><div style="font-family:'Instrument Serif',serif;font-size:44px;color:white;line-height:1;font-weight:400;">100</div><div style="font-family:'Syne',sans-serif;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-top:3px;">verbes français</div></div></div><div class="shcb"><div class="shcc" style="color:var(--rose);" data-t="sc3_cat">Fiche pratique</div><div class="shct" data-t="sc3_title">100 verbes essentiels</div><p class="shcd" data-t="sc3_desc">Les 100 verbes les plus utiles.</p><div class="shcf"><a href="https://adrianmargolin.gumroad.com/l/100_verbes" target="_blank" class="btn" style="font-size:11px;padding:9px 14px;background:var(--rose);color:white;font-family:'Syne',sans-serif;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-radius:var(--r);" data-t="sc3_btn">Acheter →</a></div></div></div>
+  </div>
+  <footer><p data-t="footer_copy">© 2026 Adrian Margolin</p><div class="fl"><a href="#" id="fl-shop-f" data-t="nav_free">Ressources</a><a href="#" id="fl-shop-p" data-t="nav_projects">Projets</a></div></footer>
+</section>
+
+<!-- POPUP -->
+<div id="ov">
+  <div id="pp">
+    <button id="pp-x">×</button>
+    <div class="ppt" data-t="popup_title">Écrivez-moi d'abord</div>
+    <p class="pps" data-t="popup_sub">Décrivez vos objectifs.</p>
+    <a href="https://t.me/AdrianFast" target="_blank" class="ppl"><div class="ppli" style="background:#0088CC;color:white;font-size:17px;">✈</div><div><div class="ppll">Telegram</div><div class="ppls">@AdrianFast</div></div></a>
+    <a href="https://www.linkedin.com/in/adrian-margolin" target="_blank" class="ppl"><div class="ppli" style="background:#0077B5;color:white;font-weight:700;font-size:12px;">in</div><div><div class="ppll">LinkedIn</div><div class="ppls">adrian-margolin</div></div></a>
+    <div class="pp-div" data-t="popup_active">Élève actif ? Réserver directement :</div>
+    <button class="pp-ab" id="pp-ab" data-t="popup_active_btn">Je suis un élève actif →</button>
+    
+  </div>
+</div>
+
+<script src="app.js" defer></script>
+
+<!-- CALENDLY MODAL -->
+<div id="cal-overlay" style="display:none;position:fixed;inset:0;background:rgba(24,22,42,.7);backdrop-filter:blur(6px);z-index:700;align-items:center;justify-content:center;">
+  <div style="background:white;border-radius:16px;width:min(680px,96vw);max-height:92vh;overflow:hidden;position:relative;box-shadow:0 24px 80px rgba(24,22,42,.3);">
+    <div style="transform:scale(0.67);transform-origin:top left;width:149.2537%;height:149.2537%;">
+    <button id="cal-close" style="position:absolute;top:12px;right:16px;background:none;border:none;font-size:22px;color:#8A87A0;cursor:pointer;z-index:2;line-height:1;">×</button>
+    <iframe src="https://calendly.com/adr-m-kh-ua/60min?embed_type=Inline&hide_gdpr_banner=1&hide_event_type_details=1" width="100%" height="660" frameborder="0" title="Calendly" style="display:block;"></iframe>
+    </div>
+  </div>
+</div>
+</body>
+</html>
