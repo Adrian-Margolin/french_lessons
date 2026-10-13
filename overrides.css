@@ -1,0 +1,6 @@
+/* Boutique : label et titre en blanc (remplace le jaune de « publications ») */
+#page-shop .shoph .lbl,
+#page-shop .shoph .st,
+#page-shop .shoph .st em {
+  color: #fff !important;
+}
