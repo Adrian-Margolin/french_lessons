@@ -78,14 +78,35 @@
     if (el && text) el.setAttribute('alt', text);
   }
 
+  // Boutique : étiquette (« Boutique ») et titre (« Mes publications. ») masqués dans toutes les langues.
+  function hideShopHeading() {
+    var els = document.querySelectorAll('#page-shop .shoph .lbl, #page-shop .shoph .st');
+    for (var i = 0; i < els.length; i++) els[i].style.display = 'none';
+  }
+
+  // Langue et page lues dans le DOM (plus fiable que les variables d'app.js).
+  function currentLang() {
+    var on = document.querySelector('.lang-btn.on');
+    var id = on && on.id ? on.id.replace('lb-', '') : '';
+    if (SEO[id]) return id;
+    return (typeof lang !== 'undefined' && SEO[lang]) ? lang : 'ua';
+  }
+  function currentPage(l) {
+    var pg = document.querySelector('.page.active');
+    var id = pg && pg.id ? pg.id.replace('page-', '') : '';
+    if (SEO[l][id]) return id;
+    return (typeof curPage !== 'undefined' && SEO[l][curPage]) ? curPage : 'home';
+  }
+
   function apply() {
-    var l = (typeof lang !== 'undefined' && SEO[lang]) ? lang : 'ua';
-    var p = (typeof curPage !== 'undefined' && SEO[l][curPage]) ? curPage : 'home';
+    var l = currentLang();
+    var p = currentPage(l);
     var s = SEO[l][p];
     document.title = s.t;
     ensureMeta('description').setAttribute('content', s.d);
     document.documentElement.setAttribute('lang', HTML_LANG[l] || 'uk');
     setLogo(l);
+    hideShopHeading();
     var a = ALT[l];
     setAlt('#page-home .hr img', a.hero);
     setAlt('#page-booking img[src*="photo-1"]', a.booking);
@@ -104,5 +125,11 @@
     window.showPage = function (id) { _showPage(id); apply(); };
   }
 
+  // Filet de sécurité : après chaque clic (langue, menu…), on ré-applique une fois app.js passé.
+  document.addEventListener('click', function () { setTimeout(apply, 0); });
+  window.addEventListener('popstate', function () { setTimeout(apply, 0); });
+
+  document.addEventListener('DOMContentLoaded', apply);
+  window.addEventListener('load', apply);
   apply();
 })();
