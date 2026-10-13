@@ -4,3 +4,11 @@
 #page-shop .shoph .st em {
   color: #fff !important;
 }
+
+/* Logo : nom sur 2 lignes (nom + métier) */
+.nav-logo { display: flex; flex-direction: column; line-height: 1.15; gap: 1px; }
+.nav-logo .nl-role { font-size: 10px; font-weight: 500; letter-spacing: .02em; color: var(--ink3); }
+@media (max-width: 940px) {
+  .nav-logo { max-width: calc(100vw - 230px); }
+  .nav-logo .nl-role { font-size: 9px; white-space: normal; }
+}
